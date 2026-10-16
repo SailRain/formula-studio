@@ -10,3 +10,5 @@
 /* Keep the status text independent of the decorative dot in both languages. */
 .privacy-badge{min-width:0;max-width:100%;line-height:1.5}.privacy-badge>[data-i18n]{width:auto;height:auto;min-width:0;background:none;border-radius:0}.header-actions{min-width:0;max-width:100%}.language-switch{flex:none}.identity{flex:none}.app-header{flex-wrap:wrap}.export-actions{max-width:100%;flex-wrap:wrap}
 @media(max-width:480px){.edit-actions{flex-wrap:wrap}.example-label{max-width:100%;min-width:0}.example-label select{min-width:0;max-width:155px}.run-actions{flex-wrap:wrap}.run-actions .primary-button{white-space:nowrap}}
+
+.style-tools{display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap;padding:8px 14px;border-top:1px solid var(--border);font-size:11px;color:var(--muted)}.style-tools select{max-width:100%}.style-tools span{line-height:1.5}

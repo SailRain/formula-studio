@@ -1,4 +1,16 @@
 export const messages = {
+"style.label":{"en-US": "Style", "zh-CN": "样式"},
+"style.select":{"en-US": "Select content…", "zh-CN": "请选择内容…"},
+"style.mixed":{"en-US": "Mixed", "zh-CN": "混合"},
+"style.default":{"en-US": "Math default", "zh-CN": "数学默认"},
+"style.italic":{"en-US": "Variable / Italic", "zh-CN": "变量／斜体"},
+"style.upright":{"en-US": "Upright / Number", "zh-CN": "正体／数字"},
+"style.text":{"en-US": "Text", "zh-CN": "文本"},
+"style.vector":{"en-US": "Vector / Matrix", "zh-CN": "向量／矩阵"},
+"style.bold":{"en-US": "Bold upright", "zh-CN": "粗正体"},
+"style.selectFirst":{"en-US": "Select content to change its style.", "zh-CN": "请选择内容后调整样式。"},
+"style.plainOnly":{"en-US": "Text conversion requires plain characters. Select letters or digits without formula structures or commands.", "zh-CN": "转换文本时请选择普通字符，不包含公式结构或命令。"},
+"style.failed":{"en-US": "This selection could not be styled safely. The formula is unchanged.", "zh-CN": "无法安全调整此选区样式，公式保持不变。"},
   "app.title": {
     "en-US": "Formula Studio",
     "zh-CN": "公式工作台"

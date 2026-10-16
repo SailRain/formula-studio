@@ -52,9 +52,9 @@ test('placeholder navigation moves both ways, wraps, and leaves ordinary Tab alo
 });
 
 test('known semantic mismatches cannot pass through a visually identical roundtrip', () => {
-  for (const raw of [String.raw`\varTheta`, String.raw`\boldsymbol{x}`, String.raw`\symbfit{Q}`, String.raw`\mat{P}`, String.raw`\vect{v}`, String.raw`\eu`, String.raw`\mathrm{\phi}`, String.raw`\mathbf{α}`])
+  for (const raw of [String.raw`\varTheta`, String.raw`\boldsymbol{x}`, String.raw`\mat{P}`, String.raw`\vect{v}`, String.raw`\eu`])
     assert.notEqual(visualCompatibilityReason(raw), '', raw);
-  for (const raw of ['', 'x+y', String.raw`\phi+\varphi+\epsilon+\varepsilon`, String.raw`\mathrm{d}x`])
+  for (const raw of ['', 'x+y', String.raw`\phi+\varphi+\epsilon+\varepsilon`, String.raw`\mathrm{d}x`, String.raw`\symbfit{Q}`, String.raw`\mathrm{\phi}`, String.raw`\mathbf{α}`])
     assert.equal(visualCompatibilityReason(raw), '', raw);
 });
 

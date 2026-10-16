@@ -35,7 +35,7 @@ await cp(path.join(root,'src/shared'),path.join(dist,'shared'),copyOptions);
 await cp(path.join(root,'src/shared/engine-worker.js'),path.join(dist,'formula-worker.js'));
 await rm(path.join(dist,'shared/engine-worker.js'));
 await cp(path.join(root,'runtime'),dist,copyOptions);
-await cp(path.join(root,'LICENSES'),path.join(dist,'LICENSES'),copyOptions);
+await cp(path.join(root,'LICENSES'),path.join(dist,'licenses'),copyOptions);
 await cp(path.join(root,'core'),path.join(dist,'core'),copyOptions);
 await mkdir(path.join(dist,'tests'),{recursive:true});
 await cp(path.join(root,'tests/formulas.mjs'),path.join(dist,'tests/formulas.mjs'));
@@ -63,4 +63,22 @@ execFileSync('python3',[
   path.join(root,'scripts/prepare-source-bundle.py'),
   '--application-output',path.join(dist,'sources/application-source.tar.gz'),
 ],{cwd:root,stdio:'inherit'});
+// Sites uploads have a shorter transfer window than GitHub Pages. The optional
+// profile keeps this candidate's application source local and links unchanged
+// upstream archives to their immutable, already-published repository revision.
+if(process.argv.includes('--sites')) {
+  const upstreamBase='https://raw.githubusercontent.com/SailRain/formula-studio/74f0468ba8651f3cc5eb811b5ffa4217891015b4/LICENSES/sources/';
+  const manifestPath=path.join(dist,'licenses/source-manifest.json');
+  const manifest=JSON.parse(await readFile(manifestPath,'utf8'));
+  const baseline=JSON.parse(execFileSync('git',['show','74f0468ba8651f3cc5eb811b5ffa4217891015b4:LICENSES/source-manifest.json'],{cwd:root,encoding:'utf8'}));
+  for(const entry of manifest.sourceArchives){
+    const original=baseline.sourceArchives.find(item=>item.file===entry.file);
+    if(original?.sha256!==entry.sha256 || original?.bytes!==entry.bytes)throw new Error('Sites upstream source differs from published revision: '+entry.file);
+    entry.downloadUrl=upstreamBase+entry.file;
+  }
+  await writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
+  const licensePath=path.join(dist,'licenses/third-party.html');
+  await writeFile(licensePath,(await readFile(licensePath,'utf8')).replaceAll('../licenses/sources/',upstreamBase));
+  await rm(path.join(dist,'licenses/sources'),{recursive:true,force:true});
+}
 console.log('Built Formula Studio; validated original font package and vendored MuPDF assets.');

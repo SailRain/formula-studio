@@ -373,7 +373,7 @@
     {
       "path": "scripts/prepare-source-bundle.py",
       "bytes": 4711,
-      "sha256": "bb7659a0561f9e1a7a4e5920b7771d751d9b3c9ade97b1605356cf1ceaedb767"
+      "sha256": "d7242ca803ce1b618891609203591d6efa4ae31283a4b3ed09eec5df8013c883"
     },
     {
       "path": "scripts/verify-license-materials.mjs",

@@ -68,6 +68,6 @@ if args.application_output:
                     info.size=len(raw);info.mtime=0;info.uid=0;info.gid=0;info.uname='';info.gname='';info.mode=0o644
                     archive.addfile(info,io.BytesIO(raw))
     raw=destination.read_bytes()
-    report={'file':destination.name,'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'applicationFiles':len(files),'upstreamSources':'../LICENSES/source-manifest.json','privateInputsIncluded':False}
+    report={'file':destination.name,'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'applicationFiles':len(files),'upstreamSources':'../licenses/source-manifest.json','privateInputsIncluded':False}
     destination.with_name('application-source.json').write_text(json.dumps(report,indent=2)+'\n')
     print('Packaged application source:',destination)

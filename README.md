@@ -7,6 +7,7 @@ A browser-based LaTeX formula editor with Times New Roman typesetting and PNG, S
 ## Features
 
 - Edit LaTeX source or use a visual editor, categorized templates, and examples.
+- Select characters in visual mode and use **Style** for math default, italic variables, upright numbers or differential d, text, bold italic vectors/matrices, and bold upright letters. Styles affect exports and can be undone.
 - Typeset with an actual XeTeX → PDF pipeline running in browser workers. Preview and exports come from the same compilation.
 - Keep Times New Roman 2.82 for the configured Latin, numeral, Greek, and operator ranges, with TeX Gyre Termes Math for mathematical symbols and missing glyphs. Formula commands are not automatically substituted.
 - Export tightly cropped vector PDF and SVG with outlined glyphs, or PNG at 300 / 600 dpi with transparent / white background. Export sizes are 8, 10, 12, 16, 20, and 24 pt.
@@ -28,6 +29,8 @@ Open **[Formula Studio](https://sailrain.github.io/formula-studio/)**, enter a f
 \int_0^\infty \mathrm{e}^{-x^2}\,\mathrm{d}x
 =\frac{\sqrt{\pi}}{2}
 ```
+
+To make only the d in dx upright, select d in visual mode and choose **Upright / Number**. Style changes affect only the selection; choose **Update preview** to regenerate exports. Text conversion accepts plain characters and rejects formula structures or commands.
 
 Fill each `□` template slot before compiling. Use Tab / Shift+Tab to move between slots. Change the export settings before updating the preview; preview zoom changes only its display size. **Clear** releases the current formula, results, and undo history. It does not erase your system clipboard.
 
@@ -82,3 +85,5 @@ Times New Roman is supplied only as the complete, unchanged `times32.exe` origin
 The in-app **Fonts and open-source licenses** page includes the same attribution and original license texts. Third-party license originals are preserved in their original language.
 
 For bugs or suggestions, [open an issue](https://github.com/SailRain/formula-studio/issues) with a minimal formula and browser version. Avoid including private documents or sensitive content.
+
+The optional `node scripts/build.mjs --sites` profile serves the exact application source with the candidate and links unchanged upstream source archives to a verified immutable GitHub revision, reducing Sites upload size. The default build retains all archives locally.

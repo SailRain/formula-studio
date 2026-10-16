@@ -41,3 +41,9 @@ for (const basePath of ['/', '/formula-studio/']) {
     assert.equal(requests.length,2);
   });
 }
+
+test('published license links use one casing on case-sensitive hosts',async()=>{
+  const html=await readFile(new URL('../runtime/licenses/third-party.html',import.meta.url),'utf8');
+  assert.doesNotMatch(html,/\.\.\/LICENSES\//);
+  assert.match(html,/\.\.\/licenses\/source-manifest\.json/);
+});

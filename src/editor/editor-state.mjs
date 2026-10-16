@@ -37,9 +37,10 @@ export function hasPlaceholder(source) { return /□|\\placeholder\b/.test(sourc
 // A successful string roundtrip alone does not establish macro semantics.
 export function visualCompatibilityReason(source) {
   const commands = [...source.matchAll(/\\([A-Za-z]+)/g)].map(match => match[1]);
-  const sourceOnly = commands.find(command => /^sym/.test(command) || ['varTheta', 'boldsymbol', 'bm', 'bold', 'mat', 'vect', 'eu', 'upmu', 'piup'].includes(command));
+  const sourceOnly = commands.find(command => (/^sym/.test(command) && !['symbfit','symit'].includes(command)) || ['varTheta', 'boldsymbol', 'bm', 'bold', 'mat', 'vect', 'eu', 'upmu', 'piup'].includes(command));
   if (sourceOnly) return `\\${sourceOnly} 的可视化语义尚未与本工具核对，请使用源码模式。`;
-  const styled = commands.some(command => ['mathrm', 'mathit', 'mathbf'].includes(command));
-  const greek = /[\u0370-\u03ff\u{1d400}-\u{1d7ff}]/u.test(source) || commands.some(command => /^(?:alpha|beta|gamma|delta|epsilon|varepsilon|zeta|eta|theta|vartheta|iota|kappa|varkappa|lambda|mu|nu|xi|omicron|pi|varpi|rho|varrho|sigma|varsigma|tau|upsilon|phi|varphi|chi|psi|omega|Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega)$/.test(command));
-  return styled && greek ? '含希腊字母的文字数学样式请保留源码，确保样式语义不被改写。' : '';
+  // The style adapter verifies these three text-math families, symit and symbfit.
+  // Other unicode-math macros above still require source mode; the caller
+  // additionally requires exact serialization and successful admission.
+  return '';
 }

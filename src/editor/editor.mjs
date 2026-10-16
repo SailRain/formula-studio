@@ -1,3 +1,4 @@
+import {toVisualStyle, fromVisualStyle, selectedStyle, applySelectionStyle} from './selection-style.mjs';
 import {resourceURL} from './shared/resources.mjs';
 import {t, render, describe, getLocale, setLocale, localizeStatic} from './shared/i18n.mjs';
 import {createCompilerClient} from './shared/compiler-client.mjs';
@@ -41,7 +42,7 @@ function setLanguage(value) {
   $('license-link').href = resourceURL('licenses/third-party.html') + '?lang=' + getLocale();
   if (MathfieldElement) MathfieldElement.locale = getLocale();
   if (field) field.setAttribute('aria-label', render('可视化公式编辑器'));
-  refreshStages();
+  refreshStages(); refreshStyle();
 }
 function refreshStages() {
   $('progress-details').textContent = [...stages.values()].map(message => render(message)).join(' · ');
@@ -83,7 +84,7 @@ function updateMode(next) {
   setText($('input-caption'), next === 'visual'
     ? '可视化仅用于输入；最终字体以下方准确预览为准。'
     : '源码按原文保留并编译；模板的 □ 待填位置不会进入导出。');
-  renderPalette();
+  renderPalette(); refreshStyle();
 }
 function sourceMode(message = '', focus = true) {
   $('latex-source').value = source;
@@ -102,10 +103,10 @@ function tryVisual(raw, {internal = false} = {}) {
     if (!validation.ok) return `源码已保留：${validation.error.message}`;
   }
   try {
-    if (validateLatex(raw).length) return '这段源码不在可视化编辑器支持的范围内，原文已保留。';
+    if (validateLatex(toVisualStyle(raw)).length) return '这段源码不在可视化编辑器支持的范围内，原文已保留。';
     programmatic = true;
-    field.setValue(raw, {format:'latex', mode:'math', silenceNotifications:true, selectionMode:'after', feedback:false});
-    if (field.errors.length || field.getValue('latex') !== raw) return '此公式不能逐字无损切换为可视化编辑，已完整保留源码。';
+    field.setValue(toVisualStyle(raw), {format:'latex', mode:'math', silenceNotifications:true, selectionMode:'after', feedback:false});
+    if (field.errors.length || fromVisualStyle(field.getValue('latex')) !== raw) return '此公式不能逐字无损切换为可视化编辑，已完整保留源码。';
     field.resetUndo();
     return '';
   } catch { return '可视化编辑器无法保真解析这段源码，原文已保留。'; }
@@ -118,6 +119,35 @@ function visualMode({focus = true, internal = false} = {}) {
   if (focus) field.focus();
   return true;
 }
+
+let savedStyleSelection = null;
+function refreshStyle() {
+  const menu=$('selection-style'); if(!menu)return;
+  $('style-tools').hidden=mode!=='visual';
+  const selected=fieldReady && field.selection.ranges.some(([a,b])=>a!==b);
+  menu.disabled=!selected;
+  menu.value=selected?selectedStyle(field):'';
+  $('style-hint').hidden=!!selected;
+}
+function changeSelectionStyle() {
+  if(!fieldReady || mode!=='visual')return;
+  const key=$('selection-style').value;
+  const before=field.getValue('latex');
+  const selection=savedStyleSelection || structuredClone(field.selection);
+  try {
+    programmatic=true;field.selection=selection;
+    const next=applySelectionStyle(field,key);
+    const checked=validateMathInput(next.replace(/\\placeholder\{\}/g,'0'));
+    if(!checked.ok)throw new Error('style.failed');
+    commit(next);notice();
+  } catch(error) {
+    field.setValue(before,{silenceNotifications:true});field.selection=selection;
+    notice({key:error.message?.startsWith('style.')?error.message:'style.failed'});
+  } finally {programmatic=false;savedStyleSelection=null;field.focus();refreshStyle();}
+}
+$('selection-style').addEventListener('pointerdown',()=>{if(fieldReady)savedStyleSelection=structuredClone(field.selection);});
+$('selection-style').addEventListener('focus',()=>{if(fieldReady)savedStyleSelection=structuredClone(field.selection);});
+$('selection-style').addEventListener('change',changeSelectionStyle);
 
 function renderPalette() {
   const palette = $('symbol-palette'); palette.replaceChildren();
@@ -168,7 +198,7 @@ function insertTemplate(item) {
     const selected = field.getValue(field.selection, 'latex');
     const template = item.latex.replace(/#0/g, () => selected || '#?');
     field.insert(template, {format:'latex', mode:'math', insertionMode:'replaceSelection', selectionMode:'placeholder', focus:true, feedback:false});
-    commit(field.getValue('latex'));
+    commit(fromVisualStyle(field.getValue('latex')));
   } else {
     const area = $('latex-source');
     const inserted = insertSourceTemplate(source, area.selectionStart, area.selectionEnd, item.latex);
@@ -312,7 +342,10 @@ async function initializeVisual() {
     field.mathVirtualKeyboardPolicy = 'manual'; field.smartMode = false; field.smartFence = false;
     field.smartSuperscript = false; field.removeExtraneousParentheses = false;
     field.letterShapeStyle = 'iso'; field.defaultMode = 'math';
-    field.addEventListener('input', () => { if (!programmatic) { commit(field.getValue('latex')); notice(); } });
+    // Selection formatting must not become a sticky style for new math input.
+    field.onInsertStyle = () => ({variant:'normal',variantStyle:''});
+    field.addEventListener('selection-change', () => refreshStyle());
+    field.addEventListener('input', () => { if (!programmatic) { commit(fromVisualStyle(field.getValue('latex'))); notice(); } });
     field.addEventListener('paste', event => {
       const text = event.clipboardData?.getData('text/plain') || '';
       if (text.includes('\\')) {
