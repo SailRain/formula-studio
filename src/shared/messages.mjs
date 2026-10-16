@@ -227,13 +227,33 @@ export const messages = {
     "en-US": "Typesetting and export details",
     "zh-CN": "本次排版信息与导出说明"
   },
-  "footer.privacy": {
-    "en-US": "Formulas and results stay in this page’s memory. Static components may be cached. Clear releases results and undo history.",
-    "zh-CN": "公式、编译过程与结果只留在当前页面内存；浏览器可正常缓存静态组件。清空会释放本页结果与撤销历史。"
+  "footer.originalCode": {
+    "en-US": "Original code:",
+    "zh-CN": "原创代码采用"
+  },
+  "footer.mit": {
+    "en-US": "MIT License",
+    "zh-CN": "MIT 许可"
+  },
+  "footer.mitLabel": {
+    "en-US": "MIT License (opens in a new tab)",
+    "zh-CN": "MIT 许可（在新标签页打开）"
+  },
+  "footer.navigation": {
+    "en-US": "Project links and help",
+    "zh-CN": "项目链接与帮助"
+  },
+  "footer.githubLabel": {
+    "en-US": "Formula Studio on GitHub (opens in a new tab)",
+    "zh-CN": "Formula Studio 的 GitHub 开源仓库（在新标签页打开）"
+  },
+  "footer.thirdPartyLabel": {
+    "en-US": "Third-party licenses (opens in a new tab)",
+    "zh-CN": "第三方许可（在新标签页打开）"
   },
   "help.title": {
     "en-US": "How to use",
-    "zh-CN": "输入与使用说明"
+    "zh-CN": "使用说明"
   },
   "help.first": {
     "en-US": "Enter a formula fragment without",
@@ -260,8 +280,8 @@ export const messages = {
     "zh-CN": "首次加载需要下载浏览器排版组件，可能耗时较长；取消会立即停止本次 Worker。若网络加载失败，可再次点击更新。"
   },
   "license.link": {
-    "en-US": "Fonts and open-source licenses ↗",
-    "zh-CN": "字体与开源许可 ↗"
+    "en-US": "Third-party licenses ↗",
+    "zh-CN": "第三方许可 ↗"
   },
   "status.modified": {
     "en-US": "Content changed. Update the accurate preview.",
