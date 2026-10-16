@@ -1,0 +1,192 @@
+{
+  "selectedRuntime": "libarchive.js@2.0.2",
+  "npmTarball": {
+    "url": "https://registry.npmjs.org/libarchive.js/-/libarchive.js-2.0.2.tgz",
+    "bytes": 1068246,
+    "sha256": "bdcc65af6654b4adbb6cad203272d045d2e25a4cb4281be05b37cc877de92584",
+    "registryIntegrity": "sha512-JHb+P4suNSjvz/dMdRgOe7JAxluXJeialzSFkKHU5y0ZK+m175drPOaIYW6I9WXSDcPcQ13eCUgMnpgY0ggmoQ==",
+    "registryIntegrityVerified": true,
+    "gitHead": "0989c1a6db20d030d793b1763e20d880068091bd"
+  },
+  "runtimeFiles": [
+    {
+      "file": "extract-times.mjs",
+      "bytes": 8086,
+      "sha256": "0eb5b256585f38420d0fe8a69c3d92eb1a49d0b9c4e8d4c1baf4ef2100c08d58"
+    },
+    {
+      "file": "libarchive.mjs",
+      "bytes": 133537,
+      "sha256": "bed41a1003bddc2a018def530c147661944f0889968adcb0d1435e4c88f60d95"
+    },
+    {
+      "file": "libarchive.wasm",
+      "bytes": 1002547,
+      "sha256": "8a66066ed3ea1e6db0469ec752d8fca888a6bf737c6cff21fdbcb62241a72424"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "libarchive.js JavaScript wrapper / Emscripten glue",
+      "version": "2.0.2",
+      "license": "MIT",
+      "licenseFile": "licenses/libarchivejs-MIT.txt",
+      "licenseURL": "https://github.com/nika-begiashvili/libarchivejs/blob/0989c1a6db20d030d793b1763e20d880068091bd/LICENSE",
+      "licenseSHA256": "cd2233ededca3500350239c4995a3bf4f57cb810b77074d266b0fb0d781dc161",
+      "evidence": "Shipped glue is byte-for-byte npm package src/webworker/wasm-gen/libarchive.js; npm registry SHA-512 verified."
+    },
+    {
+      "name": "libarchive native decoder",
+      "version": "3.7.2",
+      "license": "BSD-2-Clause with file-specific terms",
+      "licenseFile": "licenses/libarchive-COPYING.txt",
+      "licenseURL": "https://github.com/libarchive/libarchive/blob/v3.7.2/COPYING",
+      "licenseSHA256": "b2cdf763345de2de34cebf54394df3c61a105c3b71288603c251f2fa638200ba",
+      "evidence": "Runtime get_version() confirms libarchive 3.7.2. CAB/LZX successfully decoded in Node; browser acceptance is separate."
+    },
+    {
+      "name": "libarchive individual source notices",
+      "version": "3.7.2",
+      "license": "BSD-2-Clause; BSD-3-Clause; public domain; optional CC0/OpenSSL/Apache-2.0 file terms",
+      "licenseFile": "licenses/libarchive-source-notices.txt",
+      "licenseURL": "https://github.com/libarchive/libarchive/tree/v3.7.2/libarchive",
+      "licenseSHA256": "46f0238ec1cedc10131b0cc5ffc9420bb704f9ef012537ac94022b17b74653e7",
+      "evidence": "Conservative inclusion of production library C/header file notices; this list does not assert every object survived static-link dead-code elimination. Tests and build tools excluded."
+    },
+    {
+      "name": "libarchive CAB/LZX reader",
+      "version": "3.7.2",
+      "license": "BSD-2-Clause",
+      "licenseFile": "licenses/libarchive-CAB-reader-BSD.txt",
+      "licenseURL": "https://github.com/libarchive/libarchive/blob/v3.7.2/libarchive/archive_read_support_format_cab.c",
+      "licenseSHA256": "aab071466d8c4e8ed4f3474a92f3b63f082354ca558247e7ec9b430f10f2b22b",
+      "evidence": "Required decoder implementation; copyright Michihiro NAKAJIMA 2010-2012."
+    },
+    {
+      "name": "zlib",
+      "version": "1.3 (upstream build recipe)",
+      "license": "Zlib",
+      "licenseFile": "licenses/zlib-1.3.txt",
+      "licenseURL": "https://github.com/madler/zlib/blob/v1.3/LICENSE",
+      "licenseSHA256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+      "evidence": "Upstream pinned Dockerfile declares zlib 1.3; build links USE_ZLIB=1. Binary contains zlib paths; exact embedded sub-version not independently queried."
+    },
+    {
+      "name": "liblzma from XZ Utils",
+      "version": "5.2.11 (upstream build recipe)",
+      "license": "Public domain",
+      "licenseFile": "licenses/xz-5.2.11-COPYING.txt",
+      "licenseURL": "https://github.com/tukaani-project/xz/blob/v5.2.11/COPYING",
+      "licenseSHA256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c",
+      "evidence": "Build explicitly links liblzma.a; XZ CLI GPL/LGPL tools and scripts are not deployed or linked by this wrapper."
+    },
+    {
+      "name": "bzip2 library",
+      "version": "1.0.8 (upstream build recipe)",
+      "license": "bzip2-1.0.6 license",
+      "licenseFile": "licenses/bzip2-1.0.8.txt",
+      "licenseURL": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+      "licenseSHA256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3",
+      "evidence": "Build links USE_BZIP2=1. Binary contains bzip2 code paths; exact embedded sub-version not independently queried."
+    },
+    {
+      "name": "OpenSSL/libcrypto",
+      "version": "1.0.2s (upstream build recipe)",
+      "license": "OpenSSL AND SSLeay",
+      "licenseFile": "licenses/openssl-1.0.2s.txt",
+      "licenseURL": "https://github.com/openssl/openssl/blob/OpenSSL_1_0_2s/LICENSE",
+      "licenseSHA256": "c8f60f4842bbad0353f5d81620e72b168b5638ca3a0a999f5da113b22491612e",
+      "evidence": "Build explicitly links libssl.a and libcrypto.a; binary contains OpenSSL internal-error text. Only relevant static objects are included; fonts use internal CAB LZX, not TLS."
+    },
+    {
+      "name": "Emscripten generated runtime",
+      "version": "Exact toolchain version not embedded or pinned by upstream emscripten/emsdk image",
+      "license": "MIT OR NCSA; bundled Node MIT portions",
+      "licenseFile": "licenses/emscripten-LICENSE.txt",
+      "licenseURL": "https://github.com/emscripten-core/emscripten/blob/3.1.50/LICENSE",
+      "licenseSHA256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+      "evidence": "Generated glue demonstrably Emscripten. Supplied license text source tag 3.1.50 is license evidence, not a claim that that exact compiler built the artifact."
+    },
+    {
+      "name": "musl libc (Emscripten bundled library)",
+      "version": "Exact linked source revision not embedded",
+      "license": "MIT and included source-specific permissive notices",
+      "licenseFile": "licenses/musl-COPYRIGHT.txt",
+      "licenseURL": "https://github.com/emscripten-core/emscripten/blob/3.1.50/system/lib/libc/musl/COPYRIGHT",
+      "licenseSHA256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af",
+      "evidence": "Included conservatively for Emscripten libc portions; upstream does not provide an object-level link map."
+    }
+  ],
+  "upstreamBuildEvidence": [
+    "upstream-Dockerfile",
+    "upstream-build.sh",
+    "upstream-wrapper.c"
+  ],
+  "notDeployed": [
+    "libarchive-wasm@1.2.0 (evaluated alternative, not used)",
+    "fflate (investigated, not used)",
+    "Comlink and bundled worker APIs (not imported)",
+    "XZ command-line programs and GPL build scripts",
+    "Standalone Times New Roman font files"
+  ],
+  "licenseSeparation": "The decoder dependency notices do not license the Microsoft font package; preserve the original times32.exe and its separate original EULA per the user-approved plan.",
+  "verifiedInputPackage": {
+    "filename": "times32.exe",
+    "bytes": 661728,
+    "sha256": "db56595ec6ef5d3de5c24994f001f03b2a13e37cee27bc25c58f6f43e8f807ab",
+    "cabOffset": 67104,
+    "cabBytes": 585365,
+    "compression": "LZX",
+    "windowBits": 21,
+    "verified": true
+  },
+  "verifiedOutputFonts": [
+    {
+      "name": "Times.TTF",
+      "bytes": 330412,
+      "sha256": "4e98adeff8ccc8ef4e3ece8d4547e288ff85fdc9c7ca711a4599c234874bbe86",
+      "version": "2.82"
+    },
+    {
+      "name": "Timesbd.TTF",
+      "bytes": 333900,
+      "sha256": "4357b63cef20c01661a53c5dae70ffd20cb4765503aaed6d38b17a57c5a90bff",
+      "version": "2.82"
+    },
+    {
+      "name": "Timesbi.TTF",
+      "bytes": 238612,
+      "sha256": "192e1b0d18e90334e999a99f8c32808d6a2e74b3698b8cd90c943c2249a46549",
+      "version": "2.82"
+    },
+    {
+      "name": "Timesi.TTF",
+      "bytes": 247092,
+      "sha256": "c25ae529b4cecdbca148b6ccb862ee0abad770af8b1fd29c8dba619d1b8da78a",
+      "version": "2.82"
+    }
+  ],
+  "validation": {
+    "node": {
+      "file": "test-results.json",
+      "sha256": "2a9b5bc5fbd4b81e565bb363ea8da2a7bc4fe6899f9be904709dea5e45ed15c5",
+      "runtime": "Node v24.14.0",
+      "passed": 18,
+      "scope": "No font files written; fonts only compared in memory. Browser tests are separate."
+    },
+    "browser": {
+      "file": "../../evidence/browser-tnr282-reference.json",
+      "sha256": "48463d0897ec7a5488ef5b6ab48495faee38df21b48938a5f0c4b35e25c977a8",
+      "browsers": [
+        "Chrome 155.0.8059.80",
+        "Safari 27.0.1"
+      ],
+      "scope": "Three reference formulas, 10 TeX pt, original TNR 2.82 package, Script=CustomDefault, no optional missing-symbol extension applied; not Sites acceptance",
+      "completedPerBrowser": 3,
+      "fontWarningCount": 0,
+      "fontDecoderHeapBytes": 16777216,
+      "notYetVerified": "Missing mathematical variants remain an explicit compatibility issue for the full corpus. These three references do not exercise them."
+    }
+  },
+  "evidencePaths": "Paths identify the project research evidence bundle, not additional browser runtime requests. Combined license text is provided in DECODER-THIRD-PARTY-NOTICES.txt."
+}

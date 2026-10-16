@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; worker-src 'self'; connect-src 'self'; img-src blob:; style-src 'unsafe-inline'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>公式编辑器验收</title><style>body{font:15px system-ui;max-width:1100px;margin:30px auto;padding:20px;background:#f7f8fa}button,a{margin:6px;padding:9px}p{overflow-wrap:anywhere}img{display:block;max-width:100%;margin:20px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style></head><body>
+<h1>公式编辑器验收</h1><p>固定测试集使用与编辑器相同的校验、编译及导出流程。结果仅存在当前页面内存。</p><a href="../">返回编辑器</a>
+<label>字号 <select id="size"><option>10</option><option>12</option></select></label>
+<button id="run">运行 12 条公式</button><button id="reference">运行矩阵与求和检查（1.08 行距）</button><button id="structure">运行根号与括号检查</button><button id="variants">运行补齐与白底检查</button><button id="negative">运行错误与取消检查</button><button id="clear">清空</button>
+<p id="status" role="status">待运行</p><div id="summary"></div><div id="outputs"></div><details><summary>测试报告</summary><pre id="report"></pre></details><script type="module" src="./main.mjs"></script></body></html>

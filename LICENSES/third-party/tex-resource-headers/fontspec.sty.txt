@@ -1,0 +1,21 @@
+%%
+%% This is file `fontspec.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% fontspec.dtx  (with options: `fontspec,load')
+%% fontspec-code-load.dtx  (with options: `fontspec,load')
+%% ------------------------------------------------
+%% The FONTSPEC package  <wspr.io/fontspec>
+%% ------------------------------------------------
+%% Copyright  2004-2017  Will Robertson, LPPL "maintainer"
+%% Copyright  2009-2013  Khaled Hosny
+%% ------------------------------------------------
+%% This package is free software and may be redistributed and/or modified under
+%% the conditions of the LaTeX Project Public License, version 1.3c or higher
+%% (your choice): <http://www.latex-project.org/lppl/>.
+%% ------------------------------------------------
+%%^^A%%  fontspec.dtx -- part of FONTSPEC <wspr.io/fontspec>
+%%^^A%%  Metadata for the package, including files and versioning
+

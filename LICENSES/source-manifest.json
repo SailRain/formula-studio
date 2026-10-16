@@ -1,0 +1,796 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "projectLicense": "MIT",
+  "copyright": "2026 Pierson Bian",
+  "thirdPartyLicensesRetained": true,
+  "sourceArchives": [
+    {
+      "file": "mupdf-1.28.1-source.tar.gz",
+      "url": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz",
+      "bytes": 68898834,
+      "sha256": "dc94c60b2537e2ac9a2d379dd3801545f84a3a302d15c9da358362a1270707c3",
+      "path": "LICENSES/sources/mupdf-1.28.1-source.tar.gz"
+    },
+    {
+      "file": "swiftlatex-v20022022-source-only.tar.gz",
+      "path": "LICENSES/sources/swiftlatex-v20022022-source-only.tar.gz",
+      "bytes": 3107332,
+      "sha256": "4deddb8433715b1a9d174229c7c9e3edc6fb1a007f56fdf2991dd2b52bda15bc",
+      "upstreamArchive": {
+        "file": "swiftlatex-v20022022-source.tar.gz",
+        "url": "https://codeload.github.com/SwiftLaTeX/SwiftLaTeX/tar.gz/refs/tags/v20022022",
+        "bytes": 11561472,
+        "sha256": "1ce48c972ef7c4801f6c30b039da12e8b08cef02993a40374d7f1089f6643060"
+      },
+      "derivation": {
+        "recipe": "drop-prebuilt-object-files-v1",
+        "removedMembers": [
+          {
+            "name": "SwiftLaTeX-20022022/pdftex.wasm/xpdf/xpdf.a",
+            "bytes": 1553394,
+            "sha256": "6a8a84230f042cf09ea83161237ccbba5aaa4140787c3597944cc79eb409507e"
+          },
+          {
+            "name": "SwiftLaTeX-20022022/xetex.wasm/graphite2/libgraphite2.a",
+            "bytes": 159564,
+            "sha256": "fce74d18ea51141d3c23b4f77037d7c830360f43ab673302795f286f3b81cc08"
+          },
+          {
+            "name": "SwiftLaTeX-20022022/xetex.wasm/harfbuzz/libharfbuzz.a",
+            "bytes": 27689156,
+            "sha256": "d39b9b2ab03e34acffcfe47db2e1e4971fb5387575a365c874c1bb305277223b"
+          },
+          {
+            "name": "SwiftLaTeX-20022022/xetex.wasm/xpdf/xpdf.a",
+            "bytes": 574576,
+            "sha256": "c5bf7d4b4bb31d807ea8fe4e15d8c966f0a15c5e153572aecd9792d72f8f5f26"
+          }
+        ],
+        "retainedFileCount": 685,
+        "preferredSourceTreeSHA256": "0b98c059379feca23a9d312cbdbbdb4f66436d25abb37c7c3704a2089ca7a8ef",
+        "treeHashAlgorithm": "SHA256 of sorted UTF-8 records archive-member-name + NUL + SHA256(file bytes) + LF, for every retained regular file.",
+        "note": "All removed files are unused historical static object libraries. All implementation sources, headers, licenses, data and Makefiles remain unchanged. The actual build3 script removed these same four .a files before compiling; source-preparation input trees are therefore identical."
+      }
+    },
+    {
+      "file": "harfbuzz-3.2.0.tar.xz",
+      "url": "https://github.com/harfbuzz/harfbuzz/releases/download/3.2.0/harfbuzz-3.2.0.tar.xz",
+      "bytes": 14501956,
+      "sha256": "0ada50a1c199bb6f70843ab893c55867743a443b84d087d54df08ad883ebc2cd",
+      "downloaded": true,
+      "path": "LICENSES/sources/harfbuzz-3.2.0.tar.xz"
+    },
+    {
+      "file": "graphite2-1.3.14.tgz",
+      "url": "https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz",
+      "bytes": 6630061,
+      "sha256": "f99d1c13aa5fa296898a181dff9b82fb25f6cc0933dbaa7a475d8109bd54209d",
+      "downloaded": true,
+      "path": "LICENSES/sources/graphite2-1.3.14.tgz"
+    },
+    {
+      "file": "fontspec-v2.7h-source.tar.gz",
+      "url": "https://codeload.github.com/latex3/fontspec/tar.gz/refs/tags/v2.7h",
+      "bytes": 159769,
+      "sha256": "aafce1fdf3050824085819be6f262bb187f86a75bcbca735e20056a3dc993300",
+      "downloaded": true,
+      "path": "LICENSES/sources/fontspec-v2.7h-source.tar.gz"
+    },
+    {
+      "file": "unicode-math-v0.8q-source.tar.gz",
+      "url": "https://codeload.github.com/latex3/unicode-math/tar.gz/refs/tags/v0.8q",
+      "bytes": 217028,
+      "sha256": "8c9e2f9b2d290ad7066202309572a74a7208e1905b7a104bc612f21bcc626b88",
+      "downloaded": true,
+      "path": "LICENSES/sources/unicode-math-v0.8q-source.tar.gz"
+    },
+    {
+      "file": "latex2e-2020-02-02-PL2-source.tar.gz",
+      "url": "https://codeload.github.com/latex3/latex2e/tar.gz/refs/tags/release-2020-02-02-PL2",
+      "bytes": 4739069,
+      "sha256": "baddb90fe32d715c5aa1f84e5b65a174443e118fc9fff6cf796ebacbdf8c4421",
+      "downloaded": true,
+      "path": "LICENSES/sources/latex2e-2020-02-02-PL2-source.tar.gz"
+    },
+    {
+      "file": "latex3-2020-02-14-source.tar.gz",
+      "url": "https://codeload.github.com/latex3/latex3/tar.gz/refs/tags/2020-02-14",
+      "bytes": 4947628,
+      "sha256": "2a6e7b16e638e7954664601e5580a2522643e5a76cf7b813664cac09eee093c4",
+      "downloaded": true,
+      "path": "LICENSES/sources/latex3-2020-02-14-source.tar.gz"
+    },
+    {
+      "file": "libarchive-3.7.2-source.tar.gz",
+      "url": "https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz",
+      "bytes": 5281901,
+      "sha256": "63b40acff57467f7d3a64981d4bcff60b52f539fae7688aaaaee27a448b10266",
+      "path": "LICENSES/sources/libarchive-3.7.2-source.tar.gz"
+    },
+    {
+      "file": "libarchive.js-2.0.2.tgz",
+      "url": "https://registry.npmjs.org/libarchive.js/-/libarchive.js-2.0.2.tgz",
+      "bytes": 1068246,
+      "sha256": "bdcc65af6654b4adbb6cad203272d045d2e25a4cb4281be05b37cc877de92584",
+      "path": "LICENSES/sources/libarchive.js-2.0.2.tgz"
+    },
+    {
+      "file": "texlive-latex-base_2019.20200218-1_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/texlive-base/texlive-latex-base_2019.20200218-1_all.deb",
+      "bytes": 989560,
+      "sha256": "f68d0744d037fbce8fa607998793339887a2b7e0c1f442ed7c2bdefb22348795",
+      "path": "LICENSES/sources/texlive-latex-base_2019.20200218-1_all.deb"
+    },
+    {
+      "file": "texlive-latex-recommended_2019.20200218-1_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/texlive-base/texlive-latex-recommended_2019.20200218-1_all.deb",
+      "bytes": 15695520,
+      "sha256": "bfb22f01ee2c3debf58196faf0aca80be1b56495ad1300f3ec657a77f379104e",
+      "path": "LICENSES/sources/texlive-latex-recommended_2019.20200218-1_all.deb"
+    },
+    {
+      "file": "texlive-base_2019.20200218-1_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/texlive-base/texlive-base_2019.20200218-1_all.deb",
+      "bytes": 20816360,
+      "sha256": "1aee13389ee42d9def81486996c6d7e47a82b6407d2b0f5d56f5add9ed26f87b",
+      "path": "LICENSES/sources/texlive-base_2019.20200218-1_all.deb"
+    },
+    {
+      "file": "fonts-lmodern_2.004.5-6_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/l/lmodern/fonts-lmodern_2.004.5-6_all.deb",
+      "bytes": 4532284,
+      "sha256": "704585ac36e0f99559eded75be964fbaf94f5a579b2bc672f5c64011ded074f9",
+      "path": "LICENSES/sources/fonts-lmodern_2.004.5-6_all.deb"
+    },
+    {
+      "file": "tex-gyre-math.zip",
+      "url": "https://mirrors.ctan.org/fonts/tex-gyre-math.zip",
+      "bytes": 3075580,
+      "sha256": "373e47fa823bf1a645edbf772531fb9ff411d26a215dab253054635680bb6107",
+      "path": "LICENSES/sources/tex-gyre-math.zip"
+    },
+    {
+      "file": "xetex.tar.xz",
+      "url": "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/archive/xetex.tar.xz",
+      "bytes": 7988,
+      "sha256": "1916d6706a413a9c711d6012d7396f06cf559497e5fa0288692f9550fb741769",
+      "path": "LICENSES/sources/xetex.tar.xz"
+    },
+    {
+      "file": "cm.tar.xz",
+      "url": "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/archive/cm.tar.xz",
+      "bytes": 238064,
+      "sha256": "ebedd3dc7ece433d366d848ea8bd9cd2642a0f49c000c46a2ed1dde5b1cebc1c",
+      "path": "LICENSES/sources/cm.tar.xz",
+      "note": "Retained complete TeX Live Computer Modern package with original source files, metrics, and notices; rolling mirror URL can change, so this retained hash is authoritative."
+    },
+    {
+      "file": "freetype-version_1.zip",
+      "path": "LICENSES/sources/freetype-version_1.zip",
+      "url": "https://github.com/emscripten-ports/FreeType/archive/version_1.zip",
+      "bytes": 2270210,
+      "sha256": "0cdfd7045172abfe443286ebc795fa96bcebad9471ce3499c30f1bbb5472a6df",
+      "sha512": "0d0b1280ba0501ad0a23cf1daa1f86821c722218b59432734d3087a89acd22aabd5c3e5e1269700dcd41e87073046e906060f167c032eb91a3ac8c5808a02783",
+      "versionEvidence": "Emscripten3.1.4 pinned port recipe; original bytes verified with its SHA512"
+    },
+    {
+      "file": "icu4c-68_2-src.zip",
+      "path": "LICENSES/sources/icu4c-68_2-src.zip",
+      "url": "https://github.com/unicode-org/icu/releases/download/release-68-2/icu4c-68_2-src.zip",
+      "bytes": 26023195,
+      "sha256": "047e621bf3ddde8682a569ff26cbfdd27225f892adab76d32c56094823323865",
+      "sha512": "12c3db5966c234c94e7918fb8acc8bd0838edc36a620f3faa788e7ff27b06f1aa431eb117401026e3963622b9323212f444b735d5c9dd3d0b82d772a4834b993",
+      "versionEvidence": "Emscripten3.1.4 pinned port recipe; original bytes verified with its SHA512"
+    },
+    {
+      "file": "libpng-1.6.37.tar.gz",
+      "path": "LICENSES/sources/libpng-1.6.37.tar.gz",
+      "url": "https://storage.googleapis.com/webassembly/emscripten-ports/libpng-1.6.37.tar.gz",
+      "bytes": 1495748,
+      "sha256": "daeb2620d829575513e35fecc83f0d3791a620b9b93d800b763542ece9390fb4",
+      "sha512": "2ce2b855af307ca92a6e053f521f5d262c36eb836b4810cb53c809aa3ea2dcc08f834aee0ffd66137768a54397e28e92804534a74abb6fc9f6f3127f14c9c338",
+      "versionEvidence": "Emscripten3.1.4 pinned port recipe; original bytes verified with its SHA512"
+    },
+    {
+      "file": "zlib-1.2.11.zip",
+      "path": "LICENSES/sources/zlib-1.2.11.zip",
+      "url": "https://storage.googleapis.com/webassembly/emscripten-ports/zlib-1.2.11.zip",
+      "bytes": 779706,
+      "sha256": "f5cc4ab910db99b2bdbba39ebbdc225ffc2aa04b4057bc2817f1b94b6978cfc3",
+      "sha512": "a42b8359e76cf7b3ae70bf31f0f8a8caa407ac80e8fe08b838076cd5e45ac2e685dae45eb59db2d25543fb3b5bd13b843a02bb8373cda704d7238be50d5e9c68",
+      "versionEvidence": "Emscripten3.1.4 pinned port recipe; original bytes verified with its SHA512"
+    }
+  ],
+  "releaseGate": {
+    "ready": true,
+    "reason": "The published SwiftLaTeX engines were rebuilt from retained preferred sources. All 35 approved 600 dpi reference outputs matched, with 0 unexpected font warnings. Original third-party terms are retained."
+  },
+  "sourceBundleIncludesPrivateInputs": false,
+  "runtimeFiles": [
+    {
+      "path": "runtime/swiftlatexxetex.js",
+      "bytes": 90170,
+      "sha256": "127cdb3dffb2da25c892fa5a3d7006b25a0bb1cf4a16b069ab2428f6fd548d91"
+    },
+    {
+      "path": "runtime/swiftlatexxetex.wasm",
+      "bytes": 3357379,
+      "sha256": "944b7f6dd3efe150b27dc636240d316c77cec98165590a0692c0667b98236e4e"
+    },
+    {
+      "path": "runtime/swiftlatexdvipdfm.js",
+      "bytes": 77085,
+      "sha256": "80d0620536e0a13afaf7ddcf0ccc00c758a6735313a4e962b3a5c8779058ac40"
+    },
+    {
+      "path": "runtime/swiftlatexdvipdfm.wasm",
+      "bytes": 700674,
+      "sha256": "1bf8c0d424c87c1548d9d22d29251aa3308506fa6acc29d4f08dcd77ccc1f9b1"
+    },
+    {
+      "path": "runtime/converter/vendor/package/dist/mupdf.js",
+      "bytes": 103250,
+      "sha256": "5d237eadcb9640584e0050f6f958e547887b7a54d80a04043e12be9420931076"
+    },
+    {
+      "path": "runtime/converter/vendor/package/dist/mupdf-wasm.js",
+      "bytes": 28861,
+      "sha256": "25382abbfbf5c52191e5ac59e1412a0da88647fecfab0c1d797bb5948443eea4"
+    },
+    {
+      "path": "runtime/converter/vendor/package/dist/mupdf-wasm.wasm",
+      "bytes": 10409826,
+      "sha256": "5a30ef7b027f541ea8fc54e7c73f16414b0b59940741a12efe5e55f1fd0a99d7"
+    },
+    {
+      "path": "runtime/fonts/times32.exe",
+      "bytes": 661728,
+      "sha256": "db56595ec6ef5d3de5c24994f001f03b2a13e37cee27bc25c58f6f43e8f807ab"
+    },
+    {
+      "path": "runtime/fonts/libarchive.mjs",
+      "bytes": 133537,
+      "sha256": "bed41a1003bddc2a018def530c147661944f0889968adcb0d1435e4c88f60d95"
+    },
+    {
+      "path": "runtime/fonts/libarchive.wasm",
+      "bytes": 1002547,
+      "sha256": "8a66066ed3ea1e6db0469ec752d8fca888a6bf737c6cff21fdbcb62241a72424"
+    },
+    {
+      "path": "runtime/assets/swiftlatexxetex.fmt",
+      "bytes": 22791842,
+      "sha256": "fecae874377a2f7cb31811e41edabbda1e19f762d00630a8faa9fb12043b5e5f"
+    }
+  ],
+  "sourceClosure": {
+    "SwiftLaTeX": {
+      "status": "traceable-build-verified",
+      "version": "v20022022",
+      "outputRegressionPassed": true,
+      "buildReport": "LICENSES/build-materials/swiftlatex/traceable-build-report.json",
+      "regressionReport": "LICENSES/build-materials/swiftlatex/formula-output-regression.json",
+      "recipe": "scripts/rebuild-swiftlatex.py",
+      "note": "Historical upstream prebuilt .a libraries are removed by the recipe and not used in the selected runtime; HarfBuzz3.2.0,Graphite2 1.3.14,andXpdf4.02 are rebuilt from retained implementation source. All35 baseline output hashes match. Byte-identical historical WASM reproduction is not claimed.",
+      "sourceDerivationReport": "LICENSES/build-materials/swiftlatex/source-only-derivation.json"
+    },
+    "MuPDF": {
+      "status": "official-complete-release-source",
+      "version": "1.28.1",
+      "sourceCommit": "20061bd45183f5a2bff8f43675e4da91e5ac2901",
+      "archive": "LICENSES/sources/mupdf-1.28.1-source.tar.gz",
+      "note": "The npm gitHead matches the upstream release tag. The official source archive includes WASM bindings, complete thirdparty implementations and build scripts; bit-for-bit reproduction is not asserted."
+    },
+    "application": {
+      "status": "source-in-repository",
+      "license": "MIT",
+      "copyright": "2026 Pierson Bian",
+      "note": "Third-party works retain original licenses. A combined distribution using AGPL components must also satisfy applicable AGPL terms."
+    }
+  },
+  "buildMaterials": [
+    {
+      "path": "LICENSES/build-materials/libarchive/upstream-Dockerfile",
+      "bytes": 2716,
+      "sha256": "30010e592c33247a2ee0825543fa7587cc722a75f7ee62b413bab3cf8c799a5a"
+    },
+    {
+      "path": "LICENSES/build-materials/libarchive/upstream-build.sh",
+      "bytes": 619,
+      "sha256": "eb760d2f6ec0eebf22301e22c6f796e3c9f8da8df74bb8b267611689e49e1f0e"
+    },
+    {
+      "path": "LICENSES/build-materials/libarchive/upstream-wrapper.c",
+      "bytes": 2967,
+      "sha256": "e90032f00680f64f250974ecdd9a9f209a60f217ae70bf58740b9f5fa7506c02"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/README.md",
+      "bytes": 3924,
+      "sha256": "9f18e72ba6e9ca2077b4f13a12182c1d4108e5054b3d775c6e183934ef5d67e2"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/emscripten-3.1.4-freetype.py",
+      "bytes": 23722,
+      "sha256": "f515f253c416a779e17c5b1bb78ba6812ea2178203153e3536ca3b09d007cfbd"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/emscripten-3.1.4-harfbuzz.py",
+      "bytes": 4140,
+      "sha256": "4c41c4739cb69111913d88bdaf731529cea4b19e9e7cd84a83b3b6178c44a9e8"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/emscripten-3.1.4-icu.py",
+      "bytes": 3755,
+      "sha256": "7f803a857e81373e79aa30cd06286eb229508872458bbfa1a0f828241864c44a"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/emscripten-3.1.4-libpng.py",
+      "bytes": 15102,
+      "sha256": "d5ca502d66a7dd0ba99a81a8a5e8fa0208032c8f3137fda4fda16965e1170e26"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/emscripten-3.1.4-zlib.py",
+      "bytes": 18171,
+      "sha256": "306919e14c315ec13e194c8b40320a3fb0fc69714aa244204a64dfcad8645a75"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/executed-build3.py",
+      "bytes": 7992,
+      "sha256": "1b6c1159502fb9d2ccfe2f3598d56487bb7da3c31295dabfb5286cc2b3e0cd8f"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/formula-output-regression.json",
+      "bytes": 38724,
+      "sha256": "206fc32f1386feef3ffc48854fce137ffe3f396e9ffb038722a89eadcef8388d"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/source-only-derivation.json",
+      "bytes": 1954,
+      "sha256": "0a060d0ee17ce29e19d7e0536245643090fc49e3026f9a344c015cee87a9b8c4"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/toolchain.json",
+      "bytes": 925,
+      "sha256": "9739ad0776753df6f3bf28b957243aab4afca1b0e3bcfd0e81c8d311e873fcfe"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/traceable-build-report.json",
+      "bytes": 65456,
+      "sha256": "8d0533bb6665a5bfa92c19cb5f672e3976a38f944e6c102c2aa60b52300b7a6a"
+    },
+    {
+      "path": "LICENSES/build-materials/swiftlatex/traceable-build.log",
+      "bytes": 31770,
+      "sha256": "5b4d7815a55ad321ab96ff35630e703e378e1d6b537881ad6c78879a6b67fde9"
+    },
+    {
+      "path": "scripts/rebuild-swiftlatex.py",
+      "bytes": 8002,
+      "sha256": "e6e1772fd039731b3ed2bad9b587169c4ec6e7518be7ea6bbfb3083645e78060"
+    },
+    {
+      "path": "scripts/prepare-source-bundle.py",
+      "bytes": 4711,
+      "sha256": "bb7659a0561f9e1a7a4e5920b7771d751d9b3c9ade97b1605356cf1ceaedb767"
+    },
+    {
+      "path": "scripts/verify-license-materials.mjs",
+      "bytes": 4735,
+      "sha256": "b2a0391a3f65dce94f2d8d340e3a1563fec254835c0c61bbd64ed5a1987a8fc3"
+    },
+    {
+      "path": "scripts/check-engine-output.mjs",
+      "bytes": 7948,
+      "sha256": "4c1b745a2c26e52f40dfc6ba711f691064748c40e627835ab276067dbfb0b0de"
+    },
+    {
+      "path": "scripts/check-engine-stage.cjs",
+      "bytes": 4640,
+      "sha256": "9f086e330184f7b675bcc00914ce8b2b18c307d416d4318516519042429b310a"
+    },
+    {
+      "path": "tests/fixtures/expected-600dpi.json",
+      "bytes": 3147,
+      "sha256": "28ceb47354c48fab0cdb0ad1c79c2d50aad13f44e825451c60d39f64ae2af83d"
+    }
+  ],
+  "licenseTexts": [
+    {
+      "path": "LICENSES/MathLive-0.111.1-MIT.txt",
+      "bytes": 1099,
+      "sha256": "3caebd18611959ca725ab976a004d408017eb1d7093d6c9b9b09c5a4790eaff8"
+    },
+    {
+      "path": "LICENSES/MathLive-0.111.1-NOTICES.txt",
+      "bytes": 24064,
+      "sha256": "17d94b8ea619dd57f71564823088a4f0e012f542e1f0599ffc3dd07e96a33039"
+    },
+    {
+      "path": "LICENSES/MathLive-KaTeX-fonts-OFL.txt",
+      "bytes": 7849,
+      "sha256": "a24de8f0304a2baab1c6a36451256400493490ad53eacfa0e16a3bff140ca559"
+    },
+    {
+      "path": "LICENSES/Microsoft-EULA.txt",
+      "bytes": 4930,
+      "sha256": "94a0d79b7ce1e592d03a960ea21188a2a41fb96ac05eae6c1d70c081d5274a8e"
+    },
+    {
+      "path": "LICENSES/third-party/apache/APACHE-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "LICENSES/third-party/corefonts/Microsoft-EULA.txt",
+      "bytes": 4930,
+      "sha256": "94a0d79b7ce1e592d03a960ea21188a2a41fb96ac05eae6c1d70c081d5274a8e"
+    },
+    {
+      "path": "LICENSES/third-party/dvipdfmx/source-header.txt",
+      "bytes": 1091,
+      "sha256": "3e1be4b85cf1ade9bcb130beca5f1f13c2be63ba596b4fa8110bb999824d070a"
+    },
+    {
+      "path": "LICENSES/third-party/graphite2/COPYING",
+      "bytes": 1235,
+      "sha256": "2c272829ff23f182c8bf7ea12fedea69b0ae148663123ed5240c117cb129c9c1"
+    },
+    {
+      "path": "LICENSES/third-party/graphite2/LICENSE",
+      "bytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    {
+      "path": "LICENSES/third-party/harfbuzz/COPYING",
+      "bytes": 1829,
+      "sha256": "4345e1735f8bc6d812fed5180cabb5a5e88a4109d332652f2a45c13cfa5ee692"
+    },
+    {
+      "path": "LICENSES/third-party/latex/LPPL-1.3c.txt",
+      "bytes": 19102,
+      "sha256": "3d262cdf34dafa6955f703c634a8c238ec44109bc8dd6ef34fb7aa54809f7e66"
+    },
+    {
+      "path": "LICENSES/third-party/latex2e-2020-02-02-PL2/LICENSE",
+      "bytes": 19106,
+      "sha256": "5f05fcf6ef25a6c31bccd2df7c0c46b23107bbeb2ce5cdba74efb5cc357f4dbb"
+    },
+    {
+      "path": "LICENSES/third-party/latex3-2020-02-14/LICENSE",
+      "bytes": 19106,
+      "sha256": "5f05fcf6ef25a6c31bccd2df7c0c46b23107bbeb2ce5cdba74efb5cc357f4dbb"
+    },
+    {
+      "path": "LICENSES/third-party/latin-modern/package-copyright.txt",
+      "bytes": 7327,
+      "sha256": "d6ed520aa5a7ad376209ea8367a4781a3b6b76139b3376892b12500c0967ed44"
+    },
+    {
+      "path": "LICENSES/third-party/libarchive/bzip2-1.0.8.txt",
+      "bytes": 1896,
+      "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+    },
+    {
+      "path": "LICENSES/third-party/libarchive/emscripten-LICENSE.txt",
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "path": "LICENSES/third-party/libarchive/libarchive-CAB-reader-BSD.txt",
+      "bytes": 1335,
+      "sha256": "aab071466d8c4e8ed4f3474a92f3b63f082354ca558247e7ec9b430f10f2b22b"
+    },
+    {
+      "path": "LICENSES/third-party/libarchive/libarchive-COPYING.txt",
+      "bytes": 3086,
+      "sha256": "b2cdf763345de2de34cebf54394df3c61a105c3b71288603c251f2fa638200ba"
+    },
+    {
+      "path": "LICENSES/third-party/libarchive/libarchive-source-notices.txt",
+      "bytes": 235012,
+      "sha256": "46f0238ec1cedc10131b0cc5ffc9420bb704f9ef012537ac94022b17b74653e7"
+    },
+    {
+      "path": "LICENSES/third-party/libarchive/libarchivejs-MIT.txt",
+      "bytes": 1069,
+      "sha256": "cd2233ededca3500350239c4995a3bf4f57cb810b77074d266b0fb0d781dc161"
+    },
+    {
+      "path": "LICENSES/third-party/libarchive/musl-COPYRIGHT.txt",
+      "bytes": 6204,
+      "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+    },
+    {
+      "path": "LICENSES/third-party/libarchive/openssl-1.0.2s.txt",
+      "bytes": 6281,
+      "sha256": "c8f60f4842bbad0353f5d81620e72b168b5638ca3a0a999f5da113b22491612e"
+    },
+    {
+      "path": "LICENSES/third-party/libarchive/xz-5.2.11-COPYING.txt",
+      "bytes": 2775,
+      "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c"
+    },
+    {
+      "path": "LICENSES/third-party/libarchive/zlib-1.3.txt",
+      "bytes": 1002,
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf/AGPL-3.0.txt",
+      "bytes": 34520,
+      "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/resources/fonts/han/LICENSE.txt",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/resources/fonts/noto/COPYING",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/brotli/LICENSE",
+      "bytes": 1084,
+      "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/cmark-gfm/COPYING",
+      "bytes": 7567,
+      "sha256": "c22e885f33b821bddb24cf007145e5540655b6c0f403e49e6c76a93c28e6d9a9"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/curl/COPYING",
+      "bytes": 1088,
+      "sha256": "8c8824f50e73a021f5dde1fccbf69685939247399a33a32abab1fa448c9ddabb"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/extract/COPYING",
+      "bytes": 34520,
+      "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/freeglut/COPYING",
+      "bytes": 1439,
+      "sha256": "b6593d5ec4c113a274abb85b10e8615895cb0ddb89f7912af5fe5aa8df38a275"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/gumbo-parser/COPYING",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/harfbuzz/COPYING",
+      "bytes": 1971,
+      "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/harfbuzz/src/ms-use/COPYING",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/jbig2dec/COPYING",
+      "bytes": 34520,
+      "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/jbig2dec/LICENSE",
+      "bytes": 1170,
+      "sha256": "1bf5258afe453934484fd0cea97508b72301633a6a78b0ae8a9ee44ac78f26d9"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/lcms2/LICENSE",
+      "bytes": 1075,
+      "sha256": "74fe8934cee0e63e8368d4a6b3a703b603e753a62b75b75273572e98a57ebf75"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/leptonica/leptonica-license.txt",
+      "bytes": 1521,
+      "sha256": "87829abb5bbb00b55a107365da89e9a33f86c4250169e5a1e5588505be7d5806"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/mujs/COPYING",
+      "bytes": 759,
+      "sha256": "0ca9b4fbfbcab8ac7d32475890d866efc02f4cffb6b6da5c0e9a0615cc3d82fe"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/openjpeg/LICENSE",
+      "bytes": 2112,
+      "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/tesseract/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/zint/LICENSE",
+      "bytes": 909,
+      "sha256": "d69af7f2442fcde1c3372cbbb43907fa1f4b3a91ef3899be69dd3a726dc255a4"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/zlib/LICENSE",
+      "bytes": 1002,
+      "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+    },
+    {
+      "path": "LICENSES/third-party/mupdf-1.28.1/thirdparty/zxing-cpp/LICENSE",
+      "bytes": 11358,
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "path": "LICENSES/third-party/swiftlatex/AGPL-3.0.txt",
+      "bytes": 34523,
+      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+    },
+    {
+      "path": "LICENSES/third-party/swiftlatex-v20022022/xetex.wasm/xetexdir/COPYING",
+      "bytes": 1648,
+      "sha256": "5bf166af469a06c013cb1c5613cdb54007eecb37c145b3ea71bb08bf34b474ff"
+    },
+    {
+      "path": "LICENSES/third-party/termes/GUST-FONT-LICENSE.txt",
+      "bytes": 1456,
+      "sha256": "2bd69affc3da00715116f713f57eab9707e96daf3562ad0215987b15b9c16f73"
+    },
+    {
+      "path": "LICENSES/third-party/termes/MANIFEST-TeX-Gyre-Termes-Math.txt",
+      "bytes": 2216,
+      "sha256": "151704ec4829741093107305e9ff5e4261378f258d7d01ad877c6647dbd82c8d"
+    },
+    {
+      "path": "LICENSES/third-party/termes/README-TeX-Gyre-Termes-Math.txt",
+      "bytes": 4399,
+      "sha256": "88ba1d5940d2eaa7aa55a36becdbb2561edcf93e096a1b23ec7fd2c7ae666baa"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/amsbsy.sty.txt",
+      "bytes": 767,
+      "sha256": "97b3c8a4a74ec2e2ee9d7bdce9615b8770d40946aac4d9ea7e0a24c1862d5dd4"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/amsgen.sty.txt",
+      "bytes": 767,
+      "sha256": "87ebd291641e071765c5b75c5874982b74c682c69658e638b118e99f4466d098"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/amsmath.sty.txt",
+      "bytes": 781,
+      "sha256": "eff2f80f8a8699855aca968baf59aa9af9091ec0cadd3f3c50d87a30cd79f8a4"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/amsopn.sty.txt",
+      "bytes": 767,
+      "sha256": "f6fe402ba0207a0a0be39ebc2e9a0b46474d1ed230c2415f7143e25a492b694f"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/amstext.sty.txt",
+      "bytes": 769,
+      "sha256": "4920ec918499de16dfbf900c4bc4f94e1d10234beb5d344d7698287ffcfc49f2"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/article.cls.txt",
+      "bytes": 1611,
+      "sha256": "8a0ae2da9a06fd52153f4bc5678a93167411b92a45311ea8c665526eb1523b5d"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/ckx.map.txt",
+      "bytes": 1289,
+      "sha256": "52859584f1baa4aea9e5c6318ded82b1b5bfa713dcdc945bda7e26b206c8bdc4"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/expl3.sty.txt",
+      "bytes": 659,
+      "sha256": "ed216b18003fcf46aed51bcd21f03eff05271f0350c126e582b8e0bee1d3f30c"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/fix-cm.sty.txt",
+      "bytes": 1608,
+      "sha256": "15a3fb1b7b3b4be1a23bb1a6fd9cea8a1a4d5bbfb3460403d100800ef1c8a644"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/fontenc.sty.txt",
+      "bytes": 1640,
+      "sha256": "2113d58c1415ee5827aee9417a9cd479a83ae2daec7c9a4265b0c77be0778243"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/fontspec-xetex.sty.txt",
+      "bytes": 2043,
+      "sha256": "0b1ed3c544af12984dc608474fd927693afcbb44dc8ca21d6ed55fc5a0b20978"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/fontspec.cfg.txt",
+      "bytes": 383,
+      "sha256": "514ee75ba449c52f1c074d143b1dcc9decc343477f144df95c95e5625bd670af"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/fontspec.sty.txt",
+      "bytes": 915,
+      "sha256": "f9e292dde7ca5279619797ea54f59580b73d9fdb724457a7b1c9c8e620855375"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/glyphlist.txt.txt",
+      "bytes": 1045,
+      "sha256": "fd9e885263dfa832ff7d2b84b168ccb6eb454dfe0b2ca19c78d9b08ccf5a5b2c"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/kanjix.map.txt",
+      "bytes": 318,
+      "sha256": "942f55c3cc48543b8f833bf2ccb2442811eee78edad56011423a95ed7ee38fb0"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/l3backend-xdvipdfmx.def.txt",
+      "bytes": 997,
+      "sha256": "cbbc030c7bca0cde51816b48699a24e45769d56ef5a3042ad7ffb1deec86f07f"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/l3keys2e.sty.txt",
+      "bytes": 662,
+      "sha256": "4d4c541bb5d2903f80a962ee6c6db0df40ea18fb386759714777dbc171dab52d"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/pdfglyphlist.txt.txt",
+      "bytes": 345,
+      "sha256": "26ad0920f192ac30bdd9bb8a67e205278e2cce7d29573342a27c92a7d90fa662"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/pdftex.map.txt",
+      "bytes": 319,
+      "sha256": "ee543379f2560f5c4ee2ea4e05322825601f0807fb5b70c87214a2960fbeb9b9"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/size10.clo.txt",
+      "bytes": 1607,
+      "sha256": "e8cc34ac1ec0c309c4c44ba1658628d442f6084550e49cef7c56e05c0b2b84cb"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/texglyphlist.txt.txt",
+      "bytes": 366,
+      "sha256": "a1edbcc82df96ca6c05b5aad742c21db91556e76be42cffce77ecbda8365821f"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/ts1enc.def.txt",
+      "bytes": 1635,
+      "sha256": "6a4112d422384a0831e458502a8c056be4e784f78f809cb900274346118e81b9"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/tuenc.def.txt",
+      "bytes": 1633,
+      "sha256": "c7a2ce543dafb168b4b9b6311f8806609c6848f589b4c164d2e1ad2e0b5a3bdb"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/unicode-math-table.tex.txt",
+      "bytes": 120,
+      "sha256": "8e1cf9c3806ecf3e2061048f2b84120da84d4672168277320432b8e0423f7d82"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/unicode-math-xetex.sty.txt",
+      "bytes": 2025,
+      "sha256": "dc9186e34acbab51a3fe4053efc9bdd6797a920d7fc2c4c84c28394bd586d043"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/unicode-math.sty.txt",
+      "bytes": 963,
+      "sha256": "9f31982f3819e2536a9116703dfe2e7c7c6f6fef731a8672d8e1f91e9155937d"
+    },
+    {
+      "path": "LICENSES/third-party/tex-resource-headers/xparse.sty.txt",
+      "bytes": 656,
+      "sha256": "eb50f07a4980ccdd439e301bd3bf4f9c631369d8c5df512d859c70e07770f5b3"
+    },
+    {
+      "path": "runtime/licenses/Microsoft-EULA.txt",
+      "bytes": 4930,
+      "sha256": "94a0d79b7ce1e592d03a960ea21188a2a41fb96ac05eae6c1d70c081d5274a8e"
+    },
+    {
+      "path": "runtime/licenses/Formula-Studio-MIT.txt",
+      "bytes": 1069,
+      "sha256": "d57533662488b7e63e89cc2e42d6a4c303f5f82c9d30f2df467ba69141f1c0c2"
+    }
+  ]
+}

@@ -1,0 +1,1454 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-16T08:09:03.726Z",
+  "environment": "Offline Node WASM in fresh processes; browser validation remains separate",
+  "outputRegressionPassed": true,
+  "allCasesSelected": true,
+  "expectedCaseCount": 35,
+  "candidateFiles": [
+    {
+      "name": "swiftlatexxetex.js",
+      "sha256": "127cdb3dffb2da25c892fa5a3d7006b25a0bb1cf4a16b069ab2428f6fd548d91",
+      "bytes": 90170
+    },
+    {
+      "name": "swiftlatexxetex.wasm",
+      "sha256": "944b7f6dd3efe150b27dc636240d316c77cec98165590a0692c0667b98236e4e",
+      "bytes": 3357379
+    },
+    {
+      "name": "swiftlatexdvipdfm.js",
+      "sha256": "80d0620536e0a13afaf7ddcf0ccc00c758a6735313a4e962b3a5c8779058ac40",
+      "bytes": 77085
+    },
+    {
+      "name": "swiftlatexdvipdfm.wasm",
+      "sha256": "1bf8c0d424c87c1548d9d22d29251aa3308506fa6acc29d4f08dcd77ccc1f9b1",
+      "bytes": 700674
+    }
+  ],
+  "core": {
+    "name": "tex-document.mjs",
+    "sha256": "d2ef615c9c1d6950637e17674cfb216858d3279c999f1e93afa9fd8ab4042852",
+    "bytes": 11031
+  },
+  "baseline": {
+    "name": "expected-600dpi.json",
+    "sha256": "28ceb47354c48fab0cdb0ad1c79c2d50aad13f44e825451c60d39f64ae2af83d",
+    "bytes": 3147
+  },
+  "fontPackage": {
+    "name": "times32.exe",
+    "sha256": "db56595ec6ef5d3de5c24994f001f03b2a13e37cee27bc25c58f6f43e8f807ab",
+    "bytes": 661728
+  },
+  "settings": {
+    "dpi": 600,
+    "background": "transparent",
+    "cropToInk": true
+  },
+  "fontWarnings": 0,
+  "cases": [
+    {
+      "key": "linear-system-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "4262029f46c9d245f72f80b830c2195983bb0dc32abc9326bc7e7d370b156701",
+      "candidatePNGHash": "4262029f46c9d245f72f80b830c2195983bb0dc32abc9326bc7e7d370b156701",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "3d7921eb8d441b7dd1dffb5acd370493a3b16b3598e640b74c09158b425a6104",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 738,
+        "height": 126,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        88.5542984008789,
+        15.030801773071289
+      ]
+    },
+    {
+      "key": "linear-system-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "637aa554f7d471a154b01515bb3bba043d7e7c45d2c09dc1f77f2972706ff050",
+      "candidatePNGHash": "637aa554f7d471a154b01515bb3bba043d7e7c45d2c09dc1f77f2972706ff050",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "828e84c81cf423cb4fa35e14b99d3ba068f025282596b0f4dea2d4b0d8af4bca",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 874,
+        "height": 141,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        104.76940155029297,
+        16.839799880981445
+      ]
+    },
+    {
+      "key": "three-equations-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "82b3308c2167673ea43e1820a48c669f0fc924061b74253c1b8d53b51cfab15b",
+      "candidatePNGHash": "82b3308c2167673ea43e1820a48c669f0fc924061b74253c1b8d53b51cfab15b",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "211aafdf2505d6fad9f3dc449efb27aed6cefd10f54afab13aba8a8262f47d39",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 960,
+        "height": 384,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        115.18339538574219,
+        46.04199981689453
+      ]
+    },
+    {
+      "key": "three-equations-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "70a60eb2bd4fff1b7d61b888a6ae006c54153505d1879f8753d524df2e81c37c",
+      "candidatePNGHash": "70a60eb2bd4fff1b7d61b888a6ae006c54153505d1879f8753d524df2e81c37c",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "5e61ac295bd4b6a349cde2fe63e4179db493afa8248fb141152f3a2a517b1088",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 1130,
+        "height": 441,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        135.5301971435547,
+        52.85789489746094
+      ]
+    },
+    {
+      "key": "eigenvalues-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "4528bdc662d112904cf270b6c4b40fef0a28003efd54b5b10398e6815414fac9",
+      "candidatePNGHash": "4528bdc662d112904cf270b6c4b40fef0a28003efd54b5b10398e6815414fac9",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [
+        "warning: Unable to read OpenType/TrueType Unicode cmap table.",
+        "Unable to read OpenType/TrueType Unicode cmap table.",
+        "warning: Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\"",
+        "Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\""
+      ],
+      "sourceSHA256": "57bf95366e499b7fc367bb9aa6f288a6b870f9a6426d19653042e184a125acbe",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 699,
+        "height": 234,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        83.79350280761719,
+        28.050901412963867
+      ]
+    },
+    {
+      "key": "eigenvalues-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "6de7625e56617b37165dcb8c1cdac0602d44452193414ab631152efaf482156b",
+      "candidatePNGHash": "6de7625e56617b37165dcb8c1cdac0602d44452193414ab631152efaf482156b",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "b4b4923a9ab3c45691cca5d366a1ca970eed3fa6e81ef2adcb24633853805af3",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 818,
+        "height": 271,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        98.14030456542969,
+        32.463897705078125
+      ]
+    },
+    {
+      "key": "ohms-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "3019abeae6f865b7fe83fc025a96edaf316ad506b780f3172e6a4e7b405baaaa",
+      "candidatePNGHash": "3019abeae6f865b7fe83fc025a96edaf316ad506b780f3172e6a4e7b405baaaa",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "8cd56bb19d6b83f6f5984084dbc7f2489324a88fbe0218703292ff3411e10db6",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 438,
+        "height": 228,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        52.55719757080078,
+        27.328100204467773
+      ]
+    },
+    {
+      "key": "ohms-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "32005e0fefd17e98c1f9e3136f50af1c4c9f681df6e2b3bfb0b1856b3e920eb2",
+      "candidatePNGHash": "32005e0fefd17e98c1f9e3136f50af1c4c9f681df6e2b3bfb0b1856b3e920eb2",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "8e2af35aba22a1a6375bd9e1cfc518684be507ee3158261236c816991cdc0599",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 513,
+        "height": 264,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        61.532997131347656,
+        31.59670066833496
+      ]
+    },
+    {
+      "key": "gaussian-integral-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "ef3b140e5132ecfd38513ba168dda49d04472122ae478617a4cc0ebae038a9c9",
+      "candidatePNGHash": "ef3b140e5132ecfd38513ba168dda49d04472122ae478617a4cc0ebae038a9c9",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "ee5d0bb21854e79c55622b07e0de7d9ce0922925c1a91ee4cb25b4e8e3f8e2bd",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 597,
+        "height": 208,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        71.55160522460938,
+        24.91459846496582
+      ]
+    },
+    {
+      "key": "gaussian-integral-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "597805c5dfdcedc1332a19abe4f2db9a4a2ef13d13f1f6fea2ff71fa36f41b9d",
+      "candidatePNGHash": "597805c5dfdcedc1332a19abe4f2db9a4a2ef13d13f1f6fea2ff71fa36f41b9d",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "0d5c64beb97cbc66ebe87b1d4206a41b74c7a6667f55bc691324eeddf946352e",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 702,
+        "height": 240,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        84.1270980834961,
+        28.70039939880371
+      ]
+    },
+    {
+      "key": "font-styles-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "06307f233f1a0560351e9fe606d8db3ee7dcca23d57eb1d60c0588470407454c",
+      "candidatePNGHash": "06307f233f1a0560351e9fe606d8db3ee7dcca23d57eb1d60c0588470407454c",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "a7ecc08fabe0ae62de8ad4fbba8067791272f45a4a1487653d2a8fc2806a907e",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 1493,
+        "height": 498,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        179.1168975830078,
+        59.695003509521484
+      ]
+    },
+    {
+      "key": "font-styles-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "2561f7446b38809dc69a64f92a62ab01c3379ff1bb65c69df76294340bfadf71",
+      "candidatePNGHash": "2561f7446b38809dc69a64f92a62ab01c3379ff1bb65c69df76294340bfadf71",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "bc9b614f32ec3c65d48d369c4087a36ea5cced2c74da844f74c959041b82f4da",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 1782,
+        "height": 573,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        213.74330139160156,
+        68.64360046386719
+      ]
+    },
+    {
+      "key": "nested-fractions-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "b9a0408da2ebd636cd92ad931879f575365cf1b23b7d415bddba25fdc0051874",
+      "candidatePNGHash": "b9a0408da2ebd636cd92ad931879f575365cf1b23b7d415bddba25fdc0051874",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [
+        "warning: Unable to read OpenType/TrueType Unicode cmap table.",
+        "Unable to read OpenType/TrueType Unicode cmap table.",
+        "warning: Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\"",
+        "Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\""
+      ],
+      "sourceSHA256": "0e9f3bfd9d1424626e7b88afc2dcd47beac7354f36623b924e3828c552f471d2",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 290,
+        "height": 331,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        34.74860382080078,
+        39.673500061035156
+      ]
+    },
+    {
+      "key": "nested-fractions-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "e03f172062a877dde1522f58e15bef425ce9be740d8b881a958e1101b0badd2b",
+      "candidatePNGHash": "e03f172062a877dde1522f58e15bef425ce9be740d8b881a958e1101b0badd2b",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [
+        "warning: Unable to read OpenType/TrueType Unicode cmap table.",
+        "Unable to read OpenType/TrueType Unicode cmap table.",
+        "warning: Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\"",
+        "Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\""
+      ],
+      "sourceSHA256": "38a9def299d02486ecf72666b29e9f659a29aed0140348fa59f337b01663f90d",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 337,
+        "height": 387,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        40.323699951171875,
+        46.411102294921875
+      ]
+    },
+    {
+      "key": "scripts-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "2d7a5dadfafc3edb9c9e653a622fab93a3db0433a07f55a60a98770eadce0fd2",
+      "candidatePNGHash": "2d7a5dadfafc3edb9c9e653a622fab93a3db0433a07f55a60a98770eadce0fd2",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "778a7da5855d130af932b0cbd104b63851361cb915446149ffa2bf98af4e6b95",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 510,
+        "height": 266,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        61.13819885253906,
+        31.86440086364746
+      ]
+    },
+    {
+      "key": "scripts-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "fc598b8d531706b3cf5abb607b9da7f6aca4837c9c05134c2d0434756c70dd76",
+      "candidatePNGHash": "fc598b8d531706b3cf5abb607b9da7f6aca4837c9c05134c2d0434756c70dd76",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "fb5dc139c3bfb9da7d9b1fd20bf5979341ff0eff2067cfc2dea74dd3bacc8d14",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 605,
+        "height": 309,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        72.5374984741211,
+        37.040199279785156
+      ]
+    },
+    {
+      "key": "matrix-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "51fb851083d2a91c0852fa808fc04f7ed3bdb5ff960d184799f72b8b701cabc0",
+      "candidatePNGHash": "51fb851083d2a91c0852fa808fc04f7ed3bdb5ff960d184799f72b8b701cabc0",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [
+        "warning: Unable to read OpenType/TrueType Unicode cmap table.",
+        "Unable to read OpenType/TrueType Unicode cmap table.",
+        "warning: Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\"",
+        "Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\""
+      ],
+      "sourceSHA256": "41d5dabbfbe7f5caf243f7f0ed944c34602b4c49142e65e7efdfe058887c32be",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 944,
+        "height": 250,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        113.21780395507812,
+        29.93549919128418
+      ]
+    },
+    {
+      "key": "matrix-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "cf42f844ad914e7d4f002d97807a56319ddccfc26ea0de2c5985a633d0f90042",
+      "candidatePNGHash": "cf42f844ad914e7d4f002d97807a56319ddccfc26ea0de2c5985a633d0f90042",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [
+        "warning: Unable to read OpenType/TrueType Unicode cmap table.",
+        "Unable to read OpenType/TrueType Unicode cmap table.",
+        "warning: Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\"",
+        "Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\""
+      ],
+      "sourceSHA256": "676be5cf088f082b365c57b0ec8db855a1f97b9be2ec7d5901114cb31751167b",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 1089,
+        "height": 290,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        130.6794891357422,
+        34.72540283203125
+      ]
+    },
+    {
+      "key": "cases-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "8cca05cd9e6190cae19434e52d09299b3b4824c025ed8ada0d4f385e91b5b10b",
+      "candidatePNGHash": "8cca05cd9e6190cae19434e52d09299b3b4824c025ed8ada0d4f385e91b5b10b",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "e1247d27b6601aa8502cb6c68945d48d9dbf20e10998148daa5354fd7e1f0d40",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 703,
+        "height": 266,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        84.29940032958984,
+        31.831199645996094
+      ]
+    },
+    {
+      "key": "cases-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "a87081a2be0cc7009a170eac886d5cb461164ea5f3de6cdf00fcfee498983d97",
+      "candidatePNGHash": "a87081a2be0cc7009a170eac886d5cb461164ea5f3de6cdf00fcfee498983d97",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "36363e121a73072fff0fde0e519e00f2cb4d6ab49c4ef90177235b6b946179c2",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 834,
+        "height": 309,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        99.96239471435547,
+        36.99489974975586
+      ]
+    },
+    {
+      "key": "accents-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "000ba69993c055af1fb7d6c3677c2a5833a0fd5b1397d4cbc75cb2f32e5b72b7",
+      "candidatePNGHash": "000ba69993c055af1fb7d6c3677c2a5833a0fd5b1397d4cbc75cb2f32e5b72b7",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "9a49e974a39d12da7fc666b9607c53055b3bb2cacc57a8e5c6ed924f740e410f",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 1001,
+        "height": 144,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        120.0194091796875,
+        17.27359962463379
+      ]
+    },
+    {
+      "key": "accents-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "05739e8c5b4bdc25d8d52eea525e5fa1c35463d711c18bcee8b3bd9dc75438ba",
+      "candidatePNGHash": "05739e8c5b4bdc25d8d52eea525e5fa1c35463d711c18bcee8b3bd9dc75438ba",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "ad42292244a5e7e4d078d74a0a00026bdec8c480571ba882a2de13d710821126",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 1191,
+        "height": 163,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        142.826904296875,
+        19.531198501586914
+      ]
+    },
+    {
+      "key": "scalable-delimiters-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "f1a1b8996c82f1312b388bee3ef72082bad28a957f493000796ab1ccd9afc9db",
+      "candidatePNGHash": "f1a1b8996c82f1312b388bee3ef72082bad28a957f493000796ab1ccd9afc9db",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "a9b444f2e4c19ea06318eb3a2e2a51e9e12d67929d00025189234128748bc578",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 888,
+        "height": 264,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        106.47699737548828,
+        31.67999839782715
+      ]
+    },
+    {
+      "key": "scalable-delimiters-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "125fff7f38429777ea9356362a8a4ba0efe67869da67d92d583ca59c75cd3665",
+      "candidatePNGHash": "125fff7f38429777ea9356362a8a4ba0efe67869da67d92d583ca59c75cd3665",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "43173d11ff9c8324256aad2f777ddb7329b2a528e7090802363400b9d5fd858a",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 1046,
+        "height": 307,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        125.51950073242188,
+        36.816200256347656
+      ]
+    },
+    {
+      "key": "matrix-radical-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "247eb9636610dd0132b56ee2e32dafd6b990bf211eecec3848c4e79890ad8569",
+      "candidatePNGHash": "247eb9636610dd0132b56ee2e32dafd6b990bf211eecec3848c4e79890ad8569",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [
+        "warning: Unable to read OpenType/TrueType Unicode cmap table.",
+        "Unable to read OpenType/TrueType Unicode cmap table.",
+        "warning: Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\"",
+        "Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\""
+      ],
+      "sourceSHA256": "bd2eff00be91237e844df6966f91c509dac95468e71249b2a2a270f5d21cded0",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 431,
+        "height": 250,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        51.65699768066406,
+        29.93549919128418
+      ]
+    },
+    {
+      "key": "matrix-radical-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "08879db62e6688948b0aefc23af4447a1b5eb2546ad474edf48922d3bb2df3fc",
+      "candidatePNGHash": "08879db62e6688948b0aefc23af4447a1b5eb2546ad474edf48922d3bb2df3fc",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [
+        "warning: Unable to read OpenType/TrueType Unicode cmap table.",
+        "Unable to read OpenType/TrueType Unicode cmap table.",
+        "warning: Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\"",
+        "Failed to load ToUnicode CMap for font \"TeXGyreTermesMath-Regular\""
+      ],
+      "sourceSHA256": "5eab59541755fe030c30201155e61cb541b2f40fe59056f58f036baaabb03d90",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 488,
+        "height": 290,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        58.52060317993164,
+        34.725502014160156
+      ]
+    },
+    {
+      "key": "radical-heights-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "1d4f1679aa07567751fe824f0d94f71e1f0be12d8b10b61e35ad2c768066a117",
+      "candidatePNGHash": "1d4f1679aa07567751fe824f0d94f71e1f0be12d8b10b61e35ad2c768066a117",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "fac364f0b874c4424f316df721213bcbbda3a5533ddb23ed8c9531b001551fcf",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 824,
+        "height": 268,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        98.79499816894531,
+        32.14720153808594
+      ]
+    },
+    {
+      "key": "radical-heights-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "734c7117d04fb0dc41129d10a5ddad52b5bdf40ee192031eaef12988a3f7fa03",
+      "candidatePNGHash": "734c7117d04fb0dc41129d10a5ddad52b5bdf40ee192031eaef12988a3f7fa03",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "a08e7af049827b14669cee55753e319ab4d53200084ed6d9f484591b36e62b33",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 972,
+        "height": 312,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        116.55030059814453,
+        37.37950134277344
+      ]
+    },
+    {
+      "key": "definite-integral-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "efd97e7e504225b713dd406ec3c6376042c4a4266dc62f001265993f7607c0d6",
+      "candidatePNGHash": "efd97e7e504225b713dd406ec3c6376042c4a4266dc62f001265993f7607c0d6",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "1bda8af1df21775b7f1ba0ea14f71751078f1802240c4082cf926f1624e0a896",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 758,
+        "height": 223,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        90.87339782714844,
+        26.6658992767334
+      ]
+    },
+    {
+      "key": "definite-integral-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "b9bf50661863865a23fea62a99f0316b53e754b8f6d747b61613e4956f935dfc",
+      "candidatePNGHash": "b9bf50661863865a23fea62a99f0316b53e754b8f6d747b61613e4956f935dfc",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "0c4652962250ef27a071138149f3da2e540ffa52388cf3e26c342a7a1d388d9a",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 893,
+        "height": 257,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        107.07379150390625,
+        30.802000045776367
+      ]
+    },
+    {
+      "key": "text-families-10",
+      "sizePt": 10,
+      "arrayStretch": 1,
+      "baselinePNGHash": "a1fe7a121bf6b913fedc7680232719f480509eb507220a04476f53ee6d60fe95",
+      "candidatePNGHash": "a1fe7a121bf6b913fedc7680232719f480509eb507220a04476f53ee6d60fe95",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "16e3b9557d096b6141c52e0cbc9cae3dbecf25b57220fd22e633351f782e77e5",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 2118,
+        "height": 125,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        254.1464080810547,
+        14.882600784301758
+      ]
+    },
+    {
+      "key": "text-families-12",
+      "sizePt": 12,
+      "arrayStretch": 1,
+      "baselinePNGHash": "b60a056e556f890052f70d6696df0c3d6f143cc97b6494b1f8344aa9e11de71b",
+      "candidatePNGHash": "b60a056e556f890052f70d6696df0c3d6f143cc97b6494b1f8344aa9e11de71b",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "bcb2c51f61ed34a2795792ab0cc1fe35d99ebe83f5ce7567bfa1225525f1c366",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 2532,
+        "height": 139,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        303.7786865234375,
+        16.66200065612793
+      ]
+    },
+    {
+      "key": "reference-rate-matrix-10",
+      "sizePt": 10,
+      "arrayStretch": 1.08,
+      "baselinePNGHash": "d17b1acd07ee35db34153068d046a8dba08627931f1f53bb5bc3a8aaaa403900",
+      "candidatePNGHash": "d17b1acd07ee35db34153068d046a8dba08627931f1f53bb5bc3a8aaaa403900",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "bd4d513381989e82a3303b972f196dc6a852320b5b3af7239b7b549b36ccbd12",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 700,
+        "height": 341,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        83.88710021972656,
+        40.884700775146484
+      ]
+    },
+    {
+      "key": "reference-transition-matrix-10",
+      "sizePt": 10,
+      "arrayStretch": 1.08,
+      "baselinePNGHash": "00d7e2246dfe93d92bfd37b30a537a9b138b642d39d980ad68443185b81258da",
+      "candidatePNGHash": "00d7e2246dfe93d92bfd37b30a537a9b138b642d39d980ad68443185b81258da",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "e8fdbaf8deead9ad4bb3189cdbecf8c91fe0649c7408e598317baca5e7316f5c",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 557,
+        "height": 252,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        66.74919891357422,
+        30.214399337768555
+      ]
+    },
+    {
+      "key": "reference-poisson-sum-10",
+      "sizePt": 10,
+      "arrayStretch": 1.08,
+      "baselinePNGHash": "c68147139248ef5526af087eaca6709cd722e233fc34af3ccddd32201908edf1",
+      "candidatePNGHash": "c68147139248ef5526af087eaca6709cd722e233fc34af3ccddd32201908edf1",
+      "match": true,
+      "fontWarnings": [],
+      "knownPDFTextCopyWarnings": [],
+      "sourceSHA256": "bb060d47ff18ffd1f3aa96b589065522a8ee8344306f784d6998159e50db2271",
+      "pngMetadata": {
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "width": 471,
+        "height": 274,
+        "bitDepth": 8,
+        "colorType": 6,
+        "physical": {
+          "xPixelsPerMetre": 23622,
+          "yPixelsPerMetre": 23622,
+          "unit": 1
+        },
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "complete": true
+      },
+      "boundsPt": [
+        0,
+        0,
+        56.450401306152344,
+        32.780799865722656
+      ]
+    }
+  ],
+  "completedAt": "2026-10-16T08:09:53.424Z"
+}

@@ -1,0 +1,11 @@
+# Entries of the Adobe Glyph List contained 
+# in the PDF Latin Character Set and Symbol Set.
+#
+# Compiled from the Adobe Glyph List 2.0 and the
+# PDF 1.5 reference.
+#
+# See http://partners.adobe.com/asn/developer/typeforum/unicodegn.html
+#
+# Format: Semicolon-delimited fields:
+#            (1) glyph name
+#            (2) Unicode scalar value

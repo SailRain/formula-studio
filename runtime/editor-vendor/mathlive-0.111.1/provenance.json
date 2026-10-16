@@ -1,0 +1,138 @@
+{
+  "name": "MathLive",
+  "version": "0.111.1",
+  "checkedDate": "2026-10-16",
+  "npmURL": "https://registry.npmjs.org/mathlive/0.111.1",
+  "npmTarball": "https://registry.npmjs.org/mathlive/-/mathlive-0.111.1.tgz",
+  "npmIntegrity": "sha512-RVaC7NO02Lmx3ZNUxOHR2xCRpcvTfBb2BtdgV60cTanAMufaUkWcPPB2VxChcsNeL+0rTQKqOPDYxXLPOXJI+A==",
+  "npmTarballSHA256": "f285cd7b8ab5cbd67d792305c753dd4b6444f1799e012c2aef701eb87fe95f8b",
+  "npmTarballBytes": 1560998,
+  "npmGitHead": "30ad20a7a47ea43a2f6915808023202c78f37742",
+  "sourceURL": "https://codeload.github.com/arnog/mathlive/tar.gz/30ad20a7a47ea43a2f6915808023202c78f37742",
+  "sourceArchiveSHA256": "1b7a01fe03d362796179664dc5f6508e43eb6abb38e2502a0159b0e8b885f5e4",
+  "sourceArchiveBytes": 4943769,
+  "sourceEvidence": "Archive uses npm gitHead; all 20 shipped fonts byte-match this source. JavaScript release binary was not rebuilt. Original npm archive and source archive retained in research/mathlive-vendor; only selected unmodified static files are deployed.",
+  "license": "MIT (MathLive and adapted KaTeX code), SIL-OFL-1.1 (KaTeX font binaries), Apache-2.0 (upstream mhchem adaptation)",
+  "licenseText": "/licenses/MathLive-0.111.1-NOTICES.txt",
+  "fontMetadata": "12 reserved font family names; copyright Design Science 2009-2010, Khan Academy 2014-2018; exact embedded notices copied to fonts/LICENSE.txt",
+  "remotePolicy": "Use a full same-origin fontsDirectory URL before mounting. Set soundsDirectory=null, computeEngine=null, speakHook and readAloudHook to no-op, openUrl to no-op. No sounds, cloud speech SDK, SRE, Compute Engine, or CDN dependency is shipped. UI must enforce same-origin CSP and validate input before MathLive.",
+  "files": [
+    {
+      "path": "mathlive.min.mjs",
+      "bytes": 843079,
+      "sha256": "48a272a1c347c31eecefaf9baa0c317866f76fbcb83f9b2911a14e11c90e409f"
+    },
+    {
+      "path": "mathlive-fonts.css",
+      "bytes": 3012,
+      "sha256": "4fd7eb386f3fc1f9a13beb10123be5fbba01a8fa2fc9f1f4be979f1da86ca255"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1099,
+      "sha256": "3caebd18611959ca725ab976a004d408017eb1d7093d6c9b9b09c5a4790eaff8"
+    },
+    {
+      "path": "fonts/KaTeX_AMS-Regular.woff2",
+      "bytes": 28076,
+      "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308"
+    },
+    {
+      "path": "fonts/KaTeX_Caligraphic-Bold.woff2",
+      "bytes": 6912,
+      "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c"
+    },
+    {
+      "path": "fonts/KaTeX_Caligraphic-Regular.woff2",
+      "bytes": 6908,
+      "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b"
+    },
+    {
+      "path": "fonts/KaTeX_Fraktur-Bold.woff2",
+      "bytes": 11348,
+      "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f"
+    },
+    {
+      "path": "fonts/KaTeX_Fraktur-Regular.woff2",
+      "bytes": 11316,
+      "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc"
+    },
+    {
+      "path": "fonts/KaTeX_Main-Bold.woff2",
+      "bytes": 25324,
+      "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021"
+    },
+    {
+      "path": "fonts/KaTeX_Main-BoldItalic.woff2",
+      "bytes": 16780,
+      "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b"
+    },
+    {
+      "path": "fonts/KaTeX_Main-Italic.woff2",
+      "bytes": 16988,
+      "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267"
+    },
+    {
+      "path": "fonts/KaTeX_Main-Regular.woff2",
+      "bytes": 26272,
+      "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866"
+    },
+    {
+      "path": "fonts/KaTeX_Math-BoldItalic.woff2",
+      "bytes": 16400,
+      "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1"
+    },
+    {
+      "path": "fonts/KaTeX_Math-Italic.woff2",
+      "bytes": 16440,
+      "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264"
+    },
+    {
+      "path": "fonts/KaTeX_SansSerif-Bold.woff2",
+      "bytes": 12216,
+      "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62"
+    },
+    {
+      "path": "fonts/KaTeX_SansSerif-Italic.woff2",
+      "bytes": 12028,
+      "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a"
+    },
+    {
+      "path": "fonts/KaTeX_SansSerif-Regular.woff2",
+      "bytes": 10344,
+      "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342"
+    },
+    {
+      "path": "fonts/KaTeX_Script-Regular.woff2",
+      "bytes": 9644,
+      "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b"
+    },
+    {
+      "path": "fonts/KaTeX_Size1-Regular.woff2",
+      "bytes": 5468,
+      "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe"
+    },
+    {
+      "path": "fonts/KaTeX_Size2-Regular.woff2",
+      "bytes": 5208,
+      "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd"
+    },
+    {
+      "path": "fonts/KaTeX_Size3-Regular.woff2",
+      "bytes": 3624,
+      "sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995"
+    },
+    {
+      "path": "fonts/KaTeX_Size4-Regular.woff2",
+      "bytes": 4928,
+      "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0"
+    },
+    {
+      "path": "fonts/KaTeX_Typewriter-Regular.woff2",
+      "bytes": 13568,
+      "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b"
+    }
+  ],
+  "staticFilesBytes": 1106982,
+  "fontsByteMatchSource": true
+}

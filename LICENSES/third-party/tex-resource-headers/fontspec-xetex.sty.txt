@@ -1,0 +1,40 @@
+%%
+%% This is file `fontspec-xetex.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% fontspec.dtx  (with options: `fontspec,XE')
+%% fontspec-code-load.dtx  (with options: `fontspec,XE')
+%% fontspec-code-vars.dtx  (with options: `fontspec,XE')
+%% fontspec-code-msg.dtx  (with options: `fontspec,XE')
+%% fontspec-code-opening.dtx  (with options: `fontspec,XE')
+%% fontspec-code-fontload.dtx  (with options: `fontspec,XE')
+%% fontspec-code-interfaces.dtx  (with options: `fontspec,XE')
+%% fontspec-code-user.dtx  (with options: `fontspec,XE')
+%% fontspec-code-api.dtx  (with options: `fontspec,XE')
+%% fontspec-code-internal.dtx  (with options: `fontspec,XE')
+%% fontspec-code-opentype.dtx  (with options: `fontspec,XE')
+%% fontspec-code-graphite.dtx  (with options: `fontspec,XE')
+%% fontspec-code-keyval.dtx  (with options: `fontspec,XE')
+%% fontspec-code-feat-opentype.dtx  (with options: `fontspec,XE')
+%% fontspec-code-scripts.dtx  (with options: `fontspec,XE')
+%% fontspec-code-lang.dtx  (with options: `fontspec,XE')
+%% fontspec-code-feat-aat.dtx  (with options: `fontspec,XE')
+%% fontspec-code-enc.dtx  (with options: `fontspec,XE')
+%% fontspec-code-math.dtx  (with options: `fontspec,XE')
+%% fontspec-code-closing.dtx  (with options: `fontspec,XE')
+%% fontspec-code-xfss.dtx  (with options: `fontspec,XE')
+%% ------------------------------------------------
+%% The FONTSPEC package  <wspr.io/fontspec>
+%% ------------------------------------------------
+%% Copyright  2004-2017  Will Robertson, LPPL "maintainer"
+%% Copyright  2009-2013  Khaled Hosny
+%% ------------------------------------------------
+%% This package is free software and may be redistributed and/or modified under
+%% the conditions of the LaTeX Project Public License, version 1.3c or higher
+%% (your choice): <http://www.latex-project.org/lppl/>.
+%% ------------------------------------------------
+%%^^A%%  fontspec.dtx -- part of FONTSPEC <wspr.io/fontspec>
+%%^^A%%  Metadata for the package, including files and versioning
+

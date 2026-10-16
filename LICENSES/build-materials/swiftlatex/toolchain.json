@@ -1,0 +1,14 @@
+{
+  "emscriptenVersion": "3.1.4",
+  "emsdkCommit": "d7d8fef23ebc26e62b648ee61920657c7b966985",
+  "releaseBuild": "39e60dda6945cfcd6487725bdb1361ae7975173f",
+  "archive": {
+    "url": "https://storage.googleapis.com/webassembly/emscripten-releases-builds/mac/39e60dda6945cfcd6487725bdb1361ae7975173f/wasm-binaries.tbz2",
+    "bytes": 286667127,
+    "sha256": "f28a9a4f42f67de1d5c4d8a288f29e5082bbf4fcb172e0c6e248695163372478",
+    "hashEvidence": "SHA256 computed from retrieved original bytes; not a verified upstream signature or upstream-published hash."
+  },
+  "host": "macOS arm64 running the official macOS x86_64 SDK with Rosetta",
+  "node": "Separately installed Node.js; no npm install scripts are required for the engine build.",
+  "redistribution": "Unmodified general-purpose toolchain is referenced, not bundled. The source and build materials for the libraries linked into the engine are retained separately."
+}

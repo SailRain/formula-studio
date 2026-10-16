@@ -1,0 +1,298 @@
+{
+  "format": {
+    "commit": "cc2146e220658f5ee0f8643355252ae0995fbc98",
+    "url": "https://raw.githubusercontent.com/SwiftLaTeX/Texlive-Ondemand/cc2146e220658f5ee0f8643355252ae0995fbc98/swiftlatexxetex.fmt",
+    "bytes": 22791842,
+    "sha256": "fecae874377a2f7cb31811e41edabbda1e19f762d00630a8faa9fb12043b5e5f"
+  },
+  "runtimeVersions": {
+    "XeTeX": "0.999992",
+    "SwiftLaTeX banner": "0.3.0",
+    "LaTeX2e": "2020-02-02 patch level 2",
+    "expl3": "2020-02-14",
+    "fontspec": "2.7h 2020-02-03",
+    "unicode-math": "0.8q 2020-01-31",
+    "amsmath": "2.17e 2020-01-20",
+    "TeX Gyre Termes Math": "1.543",
+    "Latin Modern": "2.004.5",
+    "tex-text.tec TeXLive package revision": 80015
+  },
+  "archives": [
+    {
+      "file": "texlive-latex-base_2019.20200218-1_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/texlive-base/texlive-latex-base_2019.20200218-1_all.deb",
+      "bytes": 989560,
+      "sha256": "f68d0744d037fbce8fa607998793339887a2b7e0c1f442ed7c2bdefb22348795"
+    },
+    {
+      "file": "texlive-latex-recommended_2019.20200218-1_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/texlive-base/texlive-latex-recommended_2019.20200218-1_all.deb",
+      "bytes": 15695520,
+      "sha256": "bfb22f01ee2c3debf58196faf0aca80be1b56495ad1300f3ec657a77f379104e"
+    },
+    {
+      "file": "texlive-base_2019.20200218-1_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/texlive-base/texlive-base_2019.20200218-1_all.deb",
+      "bytes": 20816360,
+      "sha256": "1aee13389ee42d9def81486996c6d7e47a82b6407d2b0f5d56f5add9ed26f87b"
+    },
+    {
+      "file": "fonts-lmodern_2.004.5-6_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/l/lmodern/fonts-lmodern_2.004.5-6_all.deb",
+      "bytes": 4532284,
+      "sha256": "704585ac36e0f99559eded75be964fbaf94f5a579b2bc672f5c64011ded074f9"
+    },
+    {
+      "file": "tex-gyre-math.zip",
+      "url": "https://mirrors.ctan.org/fonts/tex-gyre-math.zip",
+      "bytes": 3075580,
+      "sha256": "373e47fa823bf1a645edbf772531fb9ff411d26a215dab253054635680bb6107"
+    },
+    {
+      "file": "xetex.tar.xz",
+      "url": "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/archive/xetex.tar.xz",
+      "bytes": 7988,
+      "sha256": "1916d6706a413a9c711d6012d7396f06cf559497e5fa0288692f9550fb741769"
+    }
+  ],
+  "totalResourceBytes": 29259326,
+  "licenseEvidence": [
+    "package-licenses/",
+    "fonts/GUST-FONT-LICENSE.txt",
+    "fonts/MANIFEST-TeX-Gyre-Termes-Math.txt",
+    "fonts/README-TeX-Gyre-Termes-Math.txt",
+    "xetex/tlpkg/tlpobj/xetex.tlpobj"
+  ],
+  "distributionNote": "Review each work and source-availability obligations before deployment; TeX Live is a collection with multiple licenses.",
+  "scope": "Pinned third-party input resources used by Formula Studio. Original package licenses are retained in LICENSES/third-party. No extracted TNR font files are included.",
+  "resources": [
+    {
+      "name": "swiftlatexxetex.fmt",
+      "runtimePath": "runtime/assets/swiftlatexxetex.fmt",
+      "bytes": 22791842,
+      "sha256": "fecae874377a2f7cb31811e41edabbda1e19f762d00630a8faa9fb12043b5e5f"
+    },
+    {
+      "name": "article.cls",
+      "runtimePath": "runtime/assets/article.cls",
+      "bytes": 20023,
+      "sha256": "b20a30ef79872ed1adb42bb47bf86332a6ef7609183539fb4b77af2689d4168a"
+    },
+    {
+      "name": "size10.clo",
+      "runtimePath": "runtime/assets/size10.clo",
+      "bytes": 8446,
+      "sha256": "c861ec3c63b5ab9109b9b7b8f313f5c3141089f24953e32c972fd0971510f042"
+    },
+    {
+      "name": "lmroman10-regular.otf",
+      "runtimePath": "runtime/assets/lmroman10-regular.otf",
+      "bytes": 111536,
+      "sha256": "1aa18cfefa58132c52ce5de70db1fd1154201c19cd2b2cdaffba4906a33e6852"
+    },
+    {
+      "name": "tex-text.tec",
+      "runtimePath": "runtime/assets/tex-text.tec",
+      "bytes": 398,
+      "sha256": "511836c4d363daffa1c789956bdb44b89ac526ef3e4215a846c313b717447d40"
+    },
+    {
+      "name": "amsmath.sty",
+      "runtimePath": "runtime/assets/amsmath.sty",
+      "bytes": 85660,
+      "sha256": "843c4a4ee0404b93ea384acb44f137ec086ce11092b90bd2ba1a1ed94b003611"
+    },
+    {
+      "name": "amstext.sty",
+      "runtimePath": "runtime/assets/amstext.sty",
+      "bytes": 2432,
+      "sha256": "3c27d940d38027ca930d9ecefc615d81985d018ba4aa5e19fe7bb2dd7ed639ca"
+    },
+    {
+      "name": "amsgen.sty",
+      "runtimePath": "runtime/assets/amsgen.sty",
+      "bytes": 4161,
+      "sha256": "785f0b19d3ed9e5a94c5198c4400685ef3bb132a7e7c468000bbc1e547393f65"
+    },
+    {
+      "name": "amsbsy.sty",
+      "runtimePath": "runtime/assets/amsbsy.sty",
+      "bytes": 2211,
+      "sha256": "4f806f0319e8e45acb2d0ea8052b78284ada7243ca80cbebe584b39c1b26bfcd"
+    },
+    {
+      "name": "amsopn.sty",
+      "runtimePath": "runtime/assets/amsopn.sty",
+      "bytes": 4116,
+      "sha256": "1bde81ae4bb2198d3f99aa4f0e0b7bd36a32f3a033edcbb871690119f3bc6af5"
+    },
+    {
+      "name": "fontspec.sty",
+      "runtimePath": "runtime/assets/fontspec.sty",
+      "bytes": 1655,
+      "sha256": "ef26107b179df0be5a0ca01f3e4be48718f2d7904f63673264bbcf97969169b1"
+    },
+    {
+      "name": "xparse.sty",
+      "runtimePath": "runtime/assets/xparse.sty",
+      "bytes": 81717,
+      "sha256": "4f7e05b80964048c825a4dd3f74557f4e366e0cc6cdbea027ba9373b1a7abcae"
+    },
+    {
+      "name": "expl3.sty",
+      "runtimePath": "runtime/assets/expl3.sty",
+      "bytes": 4381,
+      "sha256": "9fdf92101fe3fc44c6b008dc097d5df6f4e5047f943d3fc75b1e6cbb970a0fcb"
+    },
+    {
+      "name": "l3backend-xdvipdfmx.def",
+      "runtimePath": "runtime/assets/l3backend-xdvipdfmx.def",
+      "bytes": 24128,
+      "sha256": "3152a0f1cad589c575ac7997f66b4f5d3a62f04c73a1d7c73c5269adcb9b4665"
+    },
+    {
+      "name": "fontspec-xetex.sty",
+      "runtimePath": "runtime/assets/fontspec-xetex.sty",
+      "bytes": 161688,
+      "sha256": "60f8a6de5a88dfaf6ccc9467c37a21de8a53210a46d866a6d3b43f86257d2e6f"
+    },
+    {
+      "name": "tuenc.def",
+      "runtimePath": "runtime/assets/tuenc.def",
+      "bytes": 27440,
+      "sha256": "e18acd059205ed7a1dd26f0f0246e8fe93281ccf859baf23cb6c75552e5ad033"
+    },
+    {
+      "name": "fontenc.sty",
+      "runtimePath": "runtime/assets/fontenc.sty",
+      "bytes": 4947,
+      "sha256": "077c6ec1baafb4b622b3f7ea17c8a3db0f17772269ffc6e4f29af4f9b15f9a8f"
+    },
+    {
+      "name": "fontspec.cfg",
+      "runtimePath": "runtime/assets/fontspec.cfg",
+      "bytes": 549,
+      "sha256": "f31d038ca5322ef4fc3fbe391f42695bf1305567a04b6ac1005964703dd1232a"
+    },
+    {
+      "name": "lmroman10-bold.otf",
+      "runtimePath": "runtime/assets/lmroman10-bold.otf",
+      "bytes": 111240,
+      "sha256": "102fe06c430a8b681b2bf6876b7cd967ae4d47b4b6b41d915eb7913b726d9fb1"
+    },
+    {
+      "name": "unicode-math.sty",
+      "runtimePath": "runtime/assets/unicode-math.sty",
+      "bytes": 1474,
+      "sha256": "a3892962cdb8b63e627790614d39258d7b50f03364c079e83e33603cc9472c83"
+    },
+    {
+      "name": "unicode-math-xetex.sty",
+      "runtimePath": "runtime/assets/unicode-math-xetex.sty",
+      "bytes": 132064,
+      "sha256": "7b89271a7fd2f3dfe29343252c48e9290fd7a5518f25d4eee9693a086b516495"
+    },
+    {
+      "name": "l3keys2e.sty",
+      "runtimePath": "runtime/assets/l3keys2e.sty",
+      "bytes": 4603,
+      "sha256": "15623e8005736cdae5d02a7370391144829e9eadad54d6b8bdb9aa4371ca1074"
+    },
+    {
+      "name": "fix-cm.sty",
+      "runtimePath": "runtime/assets/fix-cm.sty",
+      "bytes": 14742,
+      "sha256": "fb9615c4854934239913b625c77cd35b0c8e9be216a3420c32877e16ae650c9b"
+    },
+    {
+      "name": "ts1enc.def",
+      "runtimePath": "runtime/assets/ts1enc.def",
+      "bytes": 7764,
+      "sha256": "b9b8714f97ad56cfb01c82d51c01c5c1547c940b113f06d1b7b5ccbaa02dd1eb"
+    },
+    {
+      "name": "unicode-math-table.tex",
+      "runtimePath": "runtime/assets/unicode-math-table.tex",
+      "bytes": 241265,
+      "sha256": "3d370b983c7bb3aa4add6bcfaa41373a3b12962ac4b3e6403810b54474ea6998"
+    },
+    {
+      "name": "cmmi12.tfm",
+      "runtimePath": "runtime/assets/cmmi12.tfm",
+      "bytes": 1524,
+      "sha256": "79563547084d85388e6909888f9fa7f5cad33bdda44ca6b25b362e1d301db539"
+    },
+    {
+      "name": "cmmi8.tfm",
+      "runtimePath": "runtime/assets/cmmi8.tfm",
+      "bytes": 1520,
+      "sha256": "65af8c1e162a952cab8e93c834fcf43ce09b508e6c16e512ebb673cd850b0d41"
+    },
+    {
+      "name": "cmmi6.tfm",
+      "runtimePath": "runtime/assets/cmmi6.tfm",
+      "bytes": 1512,
+      "sha256": "ab6ecb4aaba9ca1b4259b1d1f64309a785bbaeb09183fd79a066b7764a448a28"
+    },
+    {
+      "name": "cmmi5.tfm",
+      "runtimePath": "runtime/assets/cmmi5.tfm",
+      "bytes": 1508,
+      "sha256": "8839e40838381a0a3c976bdd5becf72afd60bde5a965c3d9b985c3479c6cf75e"
+    },
+    {
+      "name": "cmmi10.tfm",
+      "runtimePath": "runtime/assets/cmmi10.tfm",
+      "bytes": 1528,
+      "sha256": "e442c5487f84df70218ff37f775c87060856f5b6e04c011b6cadbbadfcf46645"
+    },
+    {
+      "name": "texgyretermes-math.otf",
+      "runtimePath": "runtime/assets/texgyretermes-math.otf",
+      "bytes": 532404,
+      "sha256": "e5ce42b4fe826b7ea4c0874359decf0b294439355c511a4794107a9924e2cd5a"
+    },
+    {
+      "name": "cmmi7.tfm",
+      "runtimePath": "runtime/assets/cmmi7.tfm",
+      "bytes": 1528,
+      "sha256": "ce55681703aae565f17286d800ea9780223132589bdbaeda1751b869aba26a38"
+    },
+    {
+      "name": "pdftex.map",
+      "runtimePath": "runtime/assets/pdftex.map",
+      "bytes": 4764993,
+      "sha256": "52cb4ca0f0edeceecf08fe903142fb308a935c81e9b5a42f31ff418ce76232c3"
+    },
+    {
+      "name": "kanjix.map",
+      "runtimePath": "runtime/assets/kanjix.map",
+      "bytes": 8548,
+      "sha256": "57cd885926c747e35c3d6aa50e5b3a692c4f06f957564923667c680dd0b8532b"
+    },
+    {
+      "name": "ckx.map",
+      "runtimePath": "runtime/assets/ckx.map",
+      "bytes": 1289,
+      "sha256": "52859584f1baa4aea9e5c6318ded82b1b5bfa713dcdc945bda7e26b206c8bdc4"
+    },
+    {
+      "name": "texglyphlist.txt",
+      "runtimePath": "runtime/assets/texglyphlist.txt",
+      "bytes": 10227,
+      "sha256": "4b11bf2dcd65b004ee2023c5392339aaf89429bef0d3ace13b7b098d108cd991"
+    },
+    {
+      "name": "pdfglyphlist.txt",
+      "runtimePath": "runtime/assets/pdfglyphlist.txt",
+      "bytes": 5117,
+      "sha256": "9d7bee92b7cfdaa6e03c7df895003145ed982be0bf6d1e78fdd5eb71bf4945aa"
+    },
+    {
+      "name": "glyphlist.txt",
+      "runtimePath": "runtime/assets/glyphlist.txt",
+      "bytes": 77146,
+      "sha256": "1d090feeb2cef487186d67f42d0b106bf09abf67e2cd94ab99e238d57c561d56"
+    }
+  ]
+}

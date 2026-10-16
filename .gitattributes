@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Preserve all pinned runtime and third-party license/source bytes on checkout.
+/runtime/** -text -whitespace
+/LICENSES/** -text -whitespace

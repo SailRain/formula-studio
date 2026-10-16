@@ -1,0 +1,921 @@
+{
+  "date": "2026-10-16",
+  "purpose": "Formula Studio public source release: original code MIT; third-party licenses retained.",
+  "sourceArchives": [
+    {
+      "file": "mupdf-1.28.1-source.tar.gz",
+      "url": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz",
+      "bytes": 68898834,
+      "sha256": "dc94c60b2537e2ac9a2d379dd3801545f84a3a302d15c9da358362a1270707c3",
+      "path": "LICENSES/sources/mupdf-1.28.1-source.tar.gz",
+      "sitePath": "../LICENSES/sources/mupdf-1.28.1-source.tar.gz"
+    },
+    {
+      "file": "swiftlatex-v20022022-source-only.tar.gz",
+      "path": "LICENSES/sources/swiftlatex-v20022022-source-only.tar.gz",
+      "bytes": 3107332,
+      "sha256": "4deddb8433715b1a9d174229c7c9e3edc6fb1a007f56fdf2991dd2b52bda15bc",
+      "upstreamArchive": {
+        "file": "swiftlatex-v20022022-source.tar.gz",
+        "url": "https://codeload.github.com/SwiftLaTeX/SwiftLaTeX/tar.gz/refs/tags/v20022022",
+        "bytes": 11561472,
+        "sha256": "1ce48c972ef7c4801f6c30b039da12e8b08cef02993a40374d7f1089f6643060"
+      },
+      "derivation": {
+        "recipe": "drop-prebuilt-object-files-v1",
+        "removedMembers": [
+          {
+            "name": "SwiftLaTeX-20022022/pdftex.wasm/xpdf/xpdf.a",
+            "bytes": 1553394,
+            "sha256": "6a8a84230f042cf09ea83161237ccbba5aaa4140787c3597944cc79eb409507e"
+          },
+          {
+            "name": "SwiftLaTeX-20022022/xetex.wasm/graphite2/libgraphite2.a",
+            "bytes": 159564,
+            "sha256": "fce74d18ea51141d3c23b4f77037d7c830360f43ab673302795f286f3b81cc08"
+          },
+          {
+            "name": "SwiftLaTeX-20022022/xetex.wasm/harfbuzz/libharfbuzz.a",
+            "bytes": 27689156,
+            "sha256": "d39b9b2ab03e34acffcfe47db2e1e4971fb5387575a365c874c1bb305277223b"
+          },
+          {
+            "name": "SwiftLaTeX-20022022/xetex.wasm/xpdf/xpdf.a",
+            "bytes": 574576,
+            "sha256": "c5bf7d4b4bb31d807ea8fe4e15d8c966f0a15c5e153572aecd9792d72f8f5f26"
+          }
+        ],
+        "retainedFileCount": 685,
+        "preferredSourceTreeSHA256": "0b98c059379feca23a9d312cbdbbdb4f66436d25abb37c7c3704a2089ca7a8ef",
+        "treeHashAlgorithm": "SHA256 of sorted UTF-8 records archive-member-name + NUL + SHA256(file bytes) + LF, for every retained regular file.",
+        "note": "All removed files are unused historical static object libraries. All implementation sources, headers, licenses, data and Makefiles remain unchanged. The actual build3 script removed these same four .a files before compiling; source-preparation input trees are therefore identical."
+      },
+      "sitePath": "../LICENSES/sources/swiftlatex-v20022022-source-only.tar.gz"
+    },
+    {
+      "file": "harfbuzz-3.2.0.tar.xz",
+      "url": "https://github.com/harfbuzz/harfbuzz/releases/download/3.2.0/harfbuzz-3.2.0.tar.xz",
+      "bytes": 14501956,
+      "sha256": "0ada50a1c199bb6f70843ab893c55867743a443b84d087d54df08ad883ebc2cd",
+      "downloaded": true,
+      "path": "LICENSES/sources/harfbuzz-3.2.0.tar.xz",
+      "sitePath": "../LICENSES/sources/harfbuzz-3.2.0.tar.xz"
+    },
+    {
+      "file": "graphite2-1.3.14.tgz",
+      "url": "https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz",
+      "bytes": 6630061,
+      "sha256": "f99d1c13aa5fa296898a181dff9b82fb25f6cc0933dbaa7a475d8109bd54209d",
+      "downloaded": true,
+      "path": "LICENSES/sources/graphite2-1.3.14.tgz",
+      "sitePath": "../LICENSES/sources/graphite2-1.3.14.tgz"
+    },
+    {
+      "file": "fontspec-v2.7h-source.tar.gz",
+      "url": "https://codeload.github.com/latex3/fontspec/tar.gz/refs/tags/v2.7h",
+      "bytes": 159769,
+      "sha256": "aafce1fdf3050824085819be6f262bb187f86a75bcbca735e20056a3dc993300",
+      "downloaded": true,
+      "path": "LICENSES/sources/fontspec-v2.7h-source.tar.gz",
+      "sitePath": "../LICENSES/sources/fontspec-v2.7h-source.tar.gz"
+    },
+    {
+      "file": "unicode-math-v0.8q-source.tar.gz",
+      "url": "https://codeload.github.com/latex3/unicode-math/tar.gz/refs/tags/v0.8q",
+      "bytes": 217028,
+      "sha256": "8c9e2f9b2d290ad7066202309572a74a7208e1905b7a104bc612f21bcc626b88",
+      "downloaded": true,
+      "path": "LICENSES/sources/unicode-math-v0.8q-source.tar.gz",
+      "sitePath": "../LICENSES/sources/unicode-math-v0.8q-source.tar.gz"
+    },
+    {
+      "file": "latex2e-2020-02-02-PL2-source.tar.gz",
+      "url": "https://codeload.github.com/latex3/latex2e/tar.gz/refs/tags/release-2020-02-02-PL2",
+      "bytes": 4739069,
+      "sha256": "baddb90fe32d715c5aa1f84e5b65a174443e118fc9fff6cf796ebacbdf8c4421",
+      "downloaded": true,
+      "path": "LICENSES/sources/latex2e-2020-02-02-PL2-source.tar.gz",
+      "sitePath": "../LICENSES/sources/latex2e-2020-02-02-PL2-source.tar.gz"
+    },
+    {
+      "file": "latex3-2020-02-14-source.tar.gz",
+      "url": "https://codeload.github.com/latex3/latex3/tar.gz/refs/tags/2020-02-14",
+      "bytes": 4947628,
+      "sha256": "2a6e7b16e638e7954664601e5580a2522643e5a76cf7b813664cac09eee093c4",
+      "downloaded": true,
+      "path": "LICENSES/sources/latex3-2020-02-14-source.tar.gz",
+      "sitePath": "../LICENSES/sources/latex3-2020-02-14-source.tar.gz"
+    },
+    {
+      "file": "libarchive-3.7.2-source.tar.gz",
+      "url": "https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz",
+      "bytes": 5281901,
+      "sha256": "63b40acff57467f7d3a64981d4bcff60b52f539fae7688aaaaee27a448b10266",
+      "path": "LICENSES/sources/libarchive-3.7.2-source.tar.gz",
+      "sitePath": "../LICENSES/sources/libarchive-3.7.2-source.tar.gz"
+    },
+    {
+      "file": "libarchive.js-2.0.2.tgz",
+      "url": "https://registry.npmjs.org/libarchive.js/-/libarchive.js-2.0.2.tgz",
+      "bytes": 1068246,
+      "sha256": "bdcc65af6654b4adbb6cad203272d045d2e25a4cb4281be05b37cc877de92584",
+      "path": "LICENSES/sources/libarchive.js-2.0.2.tgz",
+      "sitePath": "../LICENSES/sources/libarchive.js-2.0.2.tgz"
+    },
+    {
+      "file": "texlive-latex-base_2019.20200218-1_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/texlive-base/texlive-latex-base_2019.20200218-1_all.deb",
+      "bytes": 989560,
+      "sha256": "f68d0744d037fbce8fa607998793339887a2b7e0c1f442ed7c2bdefb22348795",
+      "path": "LICENSES/sources/texlive-latex-base_2019.20200218-1_all.deb",
+      "sitePath": "../LICENSES/sources/texlive-latex-base_2019.20200218-1_all.deb"
+    },
+    {
+      "file": "texlive-latex-recommended_2019.20200218-1_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/texlive-base/texlive-latex-recommended_2019.20200218-1_all.deb",
+      "bytes": 15695520,
+      "sha256": "bfb22f01ee2c3debf58196faf0aca80be1b56495ad1300f3ec657a77f379104e",
+      "path": "LICENSES/sources/texlive-latex-recommended_2019.20200218-1_all.deb",
+      "sitePath": "../LICENSES/sources/texlive-latex-recommended_2019.20200218-1_all.deb"
+    },
+    {
+      "file": "texlive-base_2019.20200218-1_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/t/texlive-base/texlive-base_2019.20200218-1_all.deb",
+      "bytes": 20816360,
+      "sha256": "1aee13389ee42d9def81486996c6d7e47a82b6407d2b0f5d56f5add9ed26f87b",
+      "path": "LICENSES/sources/texlive-base_2019.20200218-1_all.deb",
+      "sitePath": "../LICENSES/sources/texlive-base_2019.20200218-1_all.deb"
+    },
+    {
+      "file": "fonts-lmodern_2.004.5-6_all.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/l/lmodern/fonts-lmodern_2.004.5-6_all.deb",
+      "bytes": 4532284,
+      "sha256": "704585ac36e0f99559eded75be964fbaf94f5a579b2bc672f5c64011ded074f9",
+      "path": "LICENSES/sources/fonts-lmodern_2.004.5-6_all.deb",
+      "sitePath": "../LICENSES/sources/fonts-lmodern_2.004.5-6_all.deb"
+    },
+    {
+      "file": "tex-gyre-math.zip",
+      "url": "https://mirrors.ctan.org/fonts/tex-gyre-math.zip",
+      "bytes": 3075580,
+      "sha256": "373e47fa823bf1a645edbf772531fb9ff411d26a215dab253054635680bb6107",
+      "path": "LICENSES/sources/tex-gyre-math.zip",
+      "sitePath": "../LICENSES/sources/tex-gyre-math.zip"
+    },
+    {
+      "file": "xetex.tar.xz",
+      "url": "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/archive/xetex.tar.xz",
+      "bytes": 7988,
+      "sha256": "1916d6706a413a9c711d6012d7396f06cf559497e5fa0288692f9550fb741769",
+      "path": "LICENSES/sources/xetex.tar.xz",
+      "sitePath": "../LICENSES/sources/xetex.tar.xz"
+    },
+    {
+      "file": "cm.tar.xz",
+      "url": "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/archive/cm.tar.xz",
+      "bytes": 238064,
+      "sha256": "ebedd3dc7ece433d366d848ea8bd9cd2642a0f49c000c46a2ed1dde5b1cebc1c",
+      "path": "LICENSES/sources/cm.tar.xz",
+      "note": "Retained complete TeX Live Computer Modern package with original source files, metrics, and notices; rolling mirror URL can change, so this retained hash is authoritative.",
+      "sitePath": "../LICENSES/sources/cm.tar.xz"
+    },
+    {
+      "file": "freetype-version_1.zip",
+      "path": "LICENSES/sources/freetype-version_1.zip",
+      "url": "https://github.com/emscripten-ports/FreeType/archive/version_1.zip",
+      "bytes": 2270210,
+      "sha256": "0cdfd7045172abfe443286ebc795fa96bcebad9471ce3499c30f1bbb5472a6df",
+      "sha512": "0d0b1280ba0501ad0a23cf1daa1f86821c722218b59432734d3087a89acd22aabd5c3e5e1269700dcd41e87073046e906060f167c032eb91a3ac8c5808a02783",
+      "versionEvidence": "Emscripten3.1.4 pinned port recipe; original bytes verified with its SHA512",
+      "sitePath": "../LICENSES/sources/freetype-version_1.zip"
+    },
+    {
+      "file": "icu4c-68_2-src.zip",
+      "path": "LICENSES/sources/icu4c-68_2-src.zip",
+      "url": "https://github.com/unicode-org/icu/releases/download/release-68-2/icu4c-68_2-src.zip",
+      "bytes": 26023195,
+      "sha256": "047e621bf3ddde8682a569ff26cbfdd27225f892adab76d32c56094823323865",
+      "sha512": "12c3db5966c234c94e7918fb8acc8bd0838edc36a620f3faa788e7ff27b06f1aa431eb117401026e3963622b9323212f444b735d5c9dd3d0b82d772a4834b993",
+      "versionEvidence": "Emscripten3.1.4 pinned port recipe; original bytes verified with its SHA512",
+      "sitePath": "../LICENSES/sources/icu4c-68_2-src.zip"
+    },
+    {
+      "file": "libpng-1.6.37.tar.gz",
+      "path": "LICENSES/sources/libpng-1.6.37.tar.gz",
+      "url": "https://storage.googleapis.com/webassembly/emscripten-ports/libpng-1.6.37.tar.gz",
+      "bytes": 1495748,
+      "sha256": "daeb2620d829575513e35fecc83f0d3791a620b9b93d800b763542ece9390fb4",
+      "sha512": "2ce2b855af307ca92a6e053f521f5d262c36eb836b4810cb53c809aa3ea2dcc08f834aee0ffd66137768a54397e28e92804534a74abb6fc9f6f3127f14c9c338",
+      "versionEvidence": "Emscripten3.1.4 pinned port recipe; original bytes verified with its SHA512",
+      "sitePath": "../LICENSES/sources/libpng-1.6.37.tar.gz"
+    },
+    {
+      "file": "zlib-1.2.11.zip",
+      "path": "LICENSES/sources/zlib-1.2.11.zip",
+      "url": "https://storage.googleapis.com/webassembly/emscripten-ports/zlib-1.2.11.zip",
+      "bytes": 779706,
+      "sha256": "f5cc4ab910db99b2bdbba39ebbdc225ffc2aa04b4057bc2817f1b94b6978cfc3",
+      "sha512": "a42b8359e76cf7b3ae70bf31f0f8a8caa407ac80e8fe08b838076cd5e45ac2e685dae45eb59db2d25543fb3b5bd13b843a02bb8373cda704d7238be50d5e9c68",
+      "versionEvidence": "Emscripten3.1.4 pinned port recipe; original bytes verified with its SHA512",
+      "sitePath": "../LICENSES/sources/zlib-1.2.11.zip"
+    }
+  ],
+  "licenseTexts": [
+    {
+      "label": "Microsoft TrueType core fonts EULA — extracted from unchanged times32.exe",
+      "file": "site-license-texts/corefonts/Microsoft-EULA.txt",
+      "source": "https://downloads.sourceforge.net/project/corefonts/the%20fonts/final/times32.exe",
+      "bytes": 4930,
+      "sha256": "94a0d79b7ce1e592d03a960ea21188a2a41fb96ac05eae6c1d70c081d5274a8e"
+    },
+    {
+      "label": "SwiftLaTeX v20022022 — AGPL v3",
+      "file": "site-license-texts/swiftlatex/AGPL-3.0.txt",
+      "source": "https://github.com/SwiftLaTeX/SwiftLaTeX/blob/v20022022/LICENSE",
+      "bytes": 34523,
+      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+    },
+    {
+      "label": "MuPDF 1.28.1 — AGPL v3",
+      "file": "site-license-texts/mupdf/AGPL-3.0.txt",
+      "source": "https://github.com/ArtifexSoftware/mupdf/blob/1.28.1/COPYING",
+      "bytes": 34520,
+      "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6"
+    },
+    {
+      "label": "HarfBuzz 3.2.0 — original copyright and Old MIT license",
+      "file": "site-license-texts/harfbuzz/COPYING",
+      "source": "https://github.com/harfbuzz/harfbuzz/blob/3.2.0/COPYING",
+      "bytes": 1829,
+      "sha256": "4345e1735f8bc6d812fed5180cabb5a5e88a4109d332652f2a45c13cfa5ee692"
+    },
+    {
+      "label": "Graphite2 1.3.14 — COPYING",
+      "file": "site-license-texts/graphite2/COPYING",
+      "source": "https://github.com/silnrsi/graphite/blob/1.3.14/COPYING",
+      "bytes": 1235,
+      "sha256": "2c272829ff23f182c8bf7ea12fedea69b0ae148663123ed5240c117cb129c9c1"
+    },
+    {
+      "label": "Graphite2 1.3.14 — LICENSE",
+      "file": "site-license-texts/graphite2/LICENSE",
+      "source": "https://github.com/silnrsi/graphite/blob/1.3.14/LICENSE",
+      "bytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    {
+      "label": "LaTeX Project Public License 1.3c",
+      "file": "site-license-texts/latex/LPPL-1.3c.txt",
+      "source": "https://www.latex-project.org/lppl/lppl-1-3c.txt",
+      "bytes": 19102,
+      "sha256": "3d262cdf34dafa6955f703c634a8c238ec44109bc8dd6ef34fb7aa54809f7e66"
+    },
+    {
+      "label": "Apache License 2.0",
+      "file": "site-license-texts/apache/APACHE-2.0.txt",
+      "source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "label": "TeX Gyre Termes Math 1.543 — GUST-FONT-LICENSE.txt",
+      "file": "site-license-texts/termes/GUST-FONT-LICENSE.txt",
+      "source": "https://mirrors.ctan.org/fonts/tex-gyre-math.zip",
+      "bytes": 1456,
+      "sha256": "2bd69affc3da00715116f713f57eab9707e96daf3562ad0215987b15b9c16f73"
+    },
+    {
+      "label": "TeX Gyre Termes Math 1.543 — README-TeX-Gyre-Termes-Math.txt",
+      "file": "site-license-texts/termes/README-TeX-Gyre-Termes-Math.txt",
+      "source": "https://mirrors.ctan.org/fonts/tex-gyre-math.zip",
+      "bytes": 4399,
+      "sha256": "88ba1d5940d2eaa7aa55a36becdbb2561edcf93e096a1b23ec7fd2c7ae666baa"
+    },
+    {
+      "label": "TeX Gyre Termes Math 1.543 — MANIFEST-TeX-Gyre-Termes-Math.txt",
+      "file": "site-license-texts/termes/MANIFEST-TeX-Gyre-Termes-Math.txt",
+      "source": "https://mirrors.ctan.org/fonts/tex-gyre-math.zip",
+      "bytes": 2216,
+      "sha256": "151704ec4829741093107305e9ff5e4261378f258d7d01ad877c6647dbd82c8d"
+    },
+    {
+      "label": "Latin Modern package — original font and package copyright record",
+      "file": "site-license-texts/latin-modern/package-copyright.txt",
+      "source": "https://archive.ubuntu.com/ubuntu/pool/universe/l/lmodern/fonts-lmodern_2.004.5-6_all.deb",
+      "bytes": 7327,
+      "sha256": "d6ed520aa5a7ad376209ea8367a4781a3b6b76139b3376892b12500c0967ed44"
+    },
+    {
+      "label": "swiftlatex-v20022022-source.tar.gz :: xetex.wasm/xetexdir/COPYING",
+      "file": "site-license-texts/swiftlatex-v20022022/xetex.wasm/xetexdir/COPYING",
+      "source": "https://codeload.github.com/SwiftLaTeX/SwiftLaTeX/tar.gz/refs/tags/v20022022 [archive member: xetex.wasm/xetexdir/COPYING]",
+      "bytes": 1648,
+      "sha256": "5bf166af469a06c013cb1c5613cdb54007eecb37c145b3ea71bb08bf34b474ff"
+    },
+    {
+      "label": "Dvipdfmx — original copyright/license header",
+      "file": "site-license-texts/dvipdfmx/source-header.txt",
+      "source": "https://github.com/SwiftLaTeX/SwiftLaTeX/blob/v20022022/dvipdfm.wasm/dpx-dvipdfmx.c",
+      "bytes": 1091,
+      "sha256": "3e1be4b85cf1ade9bcb130beca5f1f13c2be63ba596b4fa8110bb999824d070a"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: docs/license.md",
+      "file": "site-license-texts/mupdf-1.28.1/docs/license.md",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: docs/license.md]",
+      "bytes": 1254,
+      "sha256": "1412b5e5fb96eaff8676441921586b1fe3951358815ae1780568779cd5714740"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: resources/fonts/han/LICENSE.txt",
+      "file": "site-license-texts/mupdf-1.28.1/resources/fonts/han/LICENSE.txt",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: resources/fonts/han/LICENSE.txt]",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: resources/fonts/noto/COPYING",
+      "file": "site-license-texts/mupdf-1.28.1/resources/fonts/noto/COPYING",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: resources/fonts/noto/COPYING]",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/brotli/LICENSE",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/brotli/LICENSE",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/brotli/LICENSE]",
+      "bytes": 1084,
+      "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/cmark-gfm/COPYING",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/cmark-gfm/COPYING",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/cmark-gfm/COPYING]",
+      "bytes": 7567,
+      "sha256": "c22e885f33b821bddb24cf007145e5540655b6c0f403e49e6c76a93c28e6d9a9"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/curl/COPYING",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/curl/COPYING",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/curl/COPYING]",
+      "bytes": 1088,
+      "sha256": "8c8824f50e73a021f5dde1fccbf69685939247399a33a32abab1fa448c9ddabb"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/extract/COPYING",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/extract/COPYING",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/extract/COPYING]",
+      "bytes": 34520,
+      "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/freeglut/COPYING",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/freeglut/COPYING",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/freeglut/COPYING]",
+      "bytes": 1439,
+      "sha256": "b6593d5ec4c113a274abb85b10e8615895cb0ddb89f7912af5fe5aa8df38a275"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/freetype/LICENSE.TXT",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/freetype/LICENSE.TXT",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/freetype/LICENSE.TXT]",
+      "bytes": 2149,
+      "sha256": "bd36c8b474855fa294c2ec5c184544478ef3720aad37d65a6296a4f264fd2d3b"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/freetype/docs/FTL.TXT",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/freetype/docs/FTL.TXT",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/freetype/docs/FTL.TXT]",
+      "bytes": 6743,
+      "sha256": "5a5ee54c5001bbad1cdc1a57cc3dd4c42199b2da09d39c7ee41fab002d02967f"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/freetype/docs/GPLv2.TXT",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/freetype/docs/GPLv2.TXT",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/freetype/docs/GPLv2.TXT]",
+      "bytes": 17994,
+      "sha256": "c4120c6752c910c299e3bd9cb3a46ff262c268303ca2069b61f92f10a5656c18"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/gumbo-parser/COPYING",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/gumbo-parser/COPYING",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/gumbo-parser/COPYING]",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/harfbuzz/COPYING",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/harfbuzz/COPYING",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/harfbuzz/COPYING]",
+      "bytes": 1971,
+      "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/harfbuzz/src/ms-use/COPYING",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/harfbuzz/src/ms-use/COPYING",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/harfbuzz/src/ms-use/COPYING]",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/jbig2dec/COPYING",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/jbig2dec/COPYING",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/jbig2dec/COPYING]",
+      "bytes": 34520,
+      "sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/jbig2dec/LICENSE",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/jbig2dec/LICENSE",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/jbig2dec/LICENSE]",
+      "bytes": 1170,
+      "sha256": "1bf5258afe453934484fd0cea97508b72301633a6a78b0ae8a9ee44ac78f26d9"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/lcms2/LICENSE",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/lcms2/LICENSE",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/lcms2/LICENSE]",
+      "bytes": 1075,
+      "sha256": "74fe8934cee0e63e8368d4a6b3a703b603e753a62b75b75273572e98a57ebf75"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/leptonica/leptonica-license.txt",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/leptonica/leptonica-license.txt",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/leptonica/leptonica-license.txt]",
+      "bytes": 1521,
+      "sha256": "87829abb5bbb00b55a107365da89e9a33f86c4250169e5a1e5588505be7d5806"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/libjpeg/README",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/libjpeg/README",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/libjpeg/README]",
+      "bytes": 18711,
+      "sha256": "913af09f785683accdf660b85dcf27fdd567d4ad649daa95cb8771b040db79d1"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/mujs/COPYING",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/mujs/COPYING",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/mujs/COPYING]",
+      "bytes": 759,
+      "sha256": "0ca9b4fbfbcab8ac7d32475890d866efc02f4cffb6b6da5c0e9a0615cc3d82fe"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/openjpeg/LICENSE",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/openjpeg/LICENSE",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/openjpeg/LICENSE]",
+      "bytes": 2112,
+      "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/tesseract/LICENSE",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/tesseract/LICENSE",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/tesseract/LICENSE]",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/zint/LICENSE",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/zint/LICENSE",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/zint/LICENSE]",
+      "bytes": 909,
+      "sha256": "d69af7f2442fcde1c3372cbbb43907fa1f4b3a91ef3899be69dd3a726dc255a4"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/zlib/LICENSE",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/zlib/LICENSE",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/zlib/LICENSE]",
+      "bytes": 1002,
+      "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+    },
+    {
+      "label": "mupdf-1.28.1-source.tar.gz :: thirdparty/zxing-cpp/LICENSE",
+      "file": "site-license-texts/mupdf-1.28.1/thirdparty/zxing-cpp/LICENSE",
+      "source": "https://github.com/ArtifexSoftware/mupdf-downloads/releases/download/1.28.1/mupdf-1.28.1-source.tar.gz [archive member: thirdparty/zxing-cpp/LICENSE]",
+      "bytes": 11358,
+      "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+    },
+    {
+      "label": "latex2e-2020-02-02-PL2-source.tar.gz :: LICENSE",
+      "file": "site-license-texts/latex2e-2020-02-02-PL2/LICENSE",
+      "source": "https://codeload.github.com/latex3/latex2e/tar.gz/refs/tags/release-2020-02-02-PL2 [archive member: LICENSE]",
+      "bytes": 19106,
+      "sha256": "5f05fcf6ef25a6c31bccd2df7c0c46b23107bbeb2ce5cdba74efb5cc357f4dbb"
+    },
+    {
+      "label": "latex3-2020-02-14-source.tar.gz :: LICENSE",
+      "file": "site-license-texts/latex3-2020-02-14/LICENSE",
+      "source": "https://codeload.github.com/latex3/latex3/tar.gz/refs/tags/2020-02-14 [archive member: LICENSE]",
+      "bytes": 19106,
+      "sha256": "5f05fcf6ef25a6c31bccd2df7c0c46b23107bbeb2ce5cdba74efb5cc357f4dbb"
+    },
+    {
+      "label": "Actual TeX resource — article.cls leading notice",
+      "file": "site-license-texts/tex-resource-headers/article.cls.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/base/article.cls",
+      "bytes": 1611,
+      "sha256": "8a0ae2da9a06fd52153f4bc5678a93167411b92a45311ea8c665526eb1523b5d"
+    },
+    {
+      "label": "Actual TeX resource — size10.clo leading notice",
+      "file": "site-license-texts/tex-resource-headers/size10.clo.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo",
+      "bytes": 1607,
+      "sha256": "e8cc34ac1ec0c309c4c44ba1658628d442f6084550e49cef7c56e05c0b2b84cb"
+    },
+    {
+      "label": "Actual TeX resource — amsmath.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/amsmath.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty",
+      "bytes": 781,
+      "sha256": "eff2f80f8a8699855aca968baf59aa9af9091ec0cadd3f3c50d87a30cd79f8a4"
+    },
+    {
+      "label": "Actual TeX resource — amstext.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/amstext.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty",
+      "bytes": 769,
+      "sha256": "4920ec918499de16dfbf900c4bc4f94e1d10234beb5d344d7698287ffcfc49f2"
+    },
+    {
+      "label": "Actual TeX resource — amsgen.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/amsgen.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty",
+      "bytes": 767,
+      "sha256": "87ebd291641e071765c5b75c5874982b74c682c69658e638b118e99f4466d098"
+    },
+    {
+      "label": "Actual TeX resource — amsbsy.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/amsbsy.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty",
+      "bytes": 767,
+      "sha256": "97b3c8a4a74ec2e2ee9d7bdce9615b8770d40946aac4d9ea7e0a24c1862d5dd4"
+    },
+    {
+      "label": "Actual TeX resource — amsopn.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/amsopn.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty",
+      "bytes": 767,
+      "sha256": "f6fe402ba0207a0a0be39ebc2e9a0b46474d1ed230c2415f7143e25a492b694f"
+    },
+    {
+      "label": "Actual TeX resource — fontspec.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/fontspec.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty",
+      "bytes": 915,
+      "sha256": "f9e292dde7ca5279619797ea54f59580b73d9fdb724457a7b1c9c8e620855375"
+    },
+    {
+      "label": "Actual TeX resource — xparse.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/xparse.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty",
+      "bytes": 656,
+      "sha256": "eb50f07a4980ccdd439e301bd3bf4f9c631369d8c5df512d859c70e07770f5b3"
+    },
+    {
+      "label": "Actual TeX resource — expl3.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/expl3.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty",
+      "bytes": 659,
+      "sha256": "ed216b18003fcf46aed51bcd21f03eff05271f0350c126e582b8e0bee1d3f30c"
+    },
+    {
+      "label": "Actual TeX resource — l3backend-xdvipdfmx.def leading notice",
+      "file": "site-license-texts/tex-resource-headers/l3backend-xdvipdfmx.def.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfmx.def",
+      "bytes": 997,
+      "sha256": "cbbc030c7bca0cde51816b48699a24e45769d56ef5a3042ad7ffb1deec86f07f"
+    },
+    {
+      "label": "Actual TeX resource — fontspec-xetex.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/fontspec-xetex.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty",
+      "bytes": 2043,
+      "sha256": "0b1ed3c544af12984dc608474fd927693afcbb44dc8ca21d6ed55fc5a0b20978"
+    },
+    {
+      "label": "Actual TeX resource — tuenc.def leading notice",
+      "file": "site-license-texts/tex-resource-headers/tuenc.def.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/base/tuenc.def",
+      "bytes": 1633,
+      "sha256": "c7a2ce543dafb168b4b9b6311f8806609c6848f589b4c164d2e1ad2e0b5a3bdb"
+    },
+    {
+      "label": "Actual TeX resource — fontenc.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/fontenc.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty",
+      "bytes": 1640,
+      "sha256": "2113d58c1415ee5827aee9417a9cd479a83ae2daec7c9a4265b0c77be0778243"
+    },
+    {
+      "label": "Actual TeX resource — fontspec.cfg leading notice",
+      "file": "site-license-texts/tex-resource-headers/fontspec.cfg.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg",
+      "bytes": 383,
+      "sha256": "514ee75ba449c52f1c074d143b1dcc9decc343477f144df95c95e5625bd670af"
+    },
+    {
+      "label": "Actual TeX resource — unicode-math.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/unicode-math.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math.sty",
+      "bytes": 963,
+      "sha256": "9f31982f3819e2536a9116703dfe2e7c7c6f6fef731a8672d8e1f91e9155937d"
+    },
+    {
+      "label": "Actual TeX resource — unicode-math-xetex.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/unicode-math-xetex.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty",
+      "bytes": 2025,
+      "sha256": "dc9186e34acbab51a3fe4053efc9bdd6797a920d7fc2c4c84c28394bd586d043"
+    },
+    {
+      "label": "Actual TeX resource — l3keys2e.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/l3keys2e.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty",
+      "bytes": 662,
+      "sha256": "4d4c541bb5d2903f80a962ee6c6db0df40ea18fb386759714777dbc171dab52d"
+    },
+    {
+      "label": "Actual TeX resource — fix-cm.sty leading notice",
+      "file": "site-license-texts/tex-resource-headers/fix-cm.sty.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty",
+      "bytes": 1608,
+      "sha256": "15a3fb1b7b3b4be1a23bb1a6fd9cea8a1a4d5bbfb3460403d100800ef1c8a644"
+    },
+    {
+      "label": "Actual TeX resource — ts1enc.def leading notice",
+      "file": "site-license-texts/tex-resource-headers/ts1enc.def.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def",
+      "bytes": 1635,
+      "sha256": "6a4112d422384a0831e458502a8c056be4e784f78f809cb900274346118e81b9"
+    },
+    {
+      "label": "Actual TeX resource — unicode-math-table.tex leading notice",
+      "file": "site-license-texts/tex-resource-headers/unicode-math-table.tex.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex",
+      "bytes": 120,
+      "sha256": "8e1cf9c3806ecf3e2061048f2b84120da84d4672168277320432b8e0423f7d82"
+    },
+    {
+      "label": "Actual TeX resource — pdftex.map leading notice",
+      "file": "site-license-texts/tex-resource-headers/pdftex.map.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map",
+      "bytes": 319,
+      "sha256": "ee543379f2560f5c4ee2ea4e05322825601f0807fb5b70c87214a2960fbeb9b9"
+    },
+    {
+      "label": "Actual TeX resource — kanjix.map leading notice",
+      "file": "site-license-texts/tex-resource-headers/kanjix.map.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/fonts/map/dvipdfmx/updmap/kanjix.map",
+      "bytes": 318,
+      "sha256": "942f55c3cc48543b8f833bf2ccb2442811eee78edad56011423a95ed7ee38fb0"
+    },
+    {
+      "label": "Actual TeX resource — ckx.map leading notice",
+      "file": "site-license-texts/tex-resource-headers/ckx.map.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/fonts/map/dvipdfmx/ckx.map",
+      "bytes": 1289,
+      "sha256": "52859584f1baa4aea9e5c6318ded82b1b5bfa713dcdc945bda7e26b206c8bdc4"
+    },
+    {
+      "label": "Actual TeX resource — texglyphlist.txt leading notice",
+      "file": "site-license-texts/tex-resource-headers/texglyphlist.txt.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/fonts/map/glyphlist/texglyphlist.txt",
+      "bytes": 366,
+      "sha256": "a1edbcc82df96ca6c05b5aad742c21db91556e76be42cffce77ecbda8365821f"
+    },
+    {
+      "label": "Actual TeX resource — pdfglyphlist.txt leading notice",
+      "file": "site-license-texts/tex-resource-headers/pdfglyphlist.txt.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/fonts/map/glyphlist/pdfglyphlist.txt",
+      "bytes": 345,
+      "sha256": "26ad0920f192ac30bdd9bb8a67e205278e2cce7d29573342a27c92a7d90fa662"
+    },
+    {
+      "label": "Actual TeX resource — glyphlist.txt leading notice",
+      "file": "site-license-texts/tex-resource-headers/glyphlist.txt.txt",
+      "source": "TeX Live archive member: tree/usr/share/texlive/texmf-dist/fonts/map/glyphlist/glyphlist.txt",
+      "bytes": 1045,
+      "sha256": "fd9e885263dfa832ff7d2b84b168ccb6eb454dfe0b2ca19c78d9b08ccf5a5b2c"
+    },
+    {
+      "label": "Emscripten 3.1.4 port/toolchain license — freetype-version_1-FTL.TXT",
+      "file": "site-license-texts/emscripten-ports/freetype-version_1-FTL.TXT",
+      "source": "https://raw.githubusercontent.com/emscripten-ports/FreeType/version_1/docs/FTL.TXT",
+      "bytes": 6741,
+      "sha256": "f4b133e25df1f86ad3ffea453aa0e613f0474f34778dbbb3e437e7b2724937d8"
+    },
+    {
+      "label": "Emscripten 3.1.4 port/toolchain license — icu-68.2-LICENSE",
+      "file": "site-license-texts/emscripten-ports/icu-68.2-LICENSE",
+      "source": "https://raw.githubusercontent.com/unicode-org/icu/release-68-2/icu4c/LICENSE",
+      "bytes": 21025,
+      "sha256": "7915b19db903070778581ae05d8bf4ea241b34a05deb51ca4f5cbb15ea1cbba3"
+    },
+    {
+      "label": "Emscripten 3.1.4 port/toolchain license — libpng-1.6.37-LICENSE",
+      "file": "site-license-texts/emscripten-ports/libpng-1.6.37-LICENSE",
+      "source": "https://raw.githubusercontent.com/pnggroup/libpng/v1.6.37/LICENSE",
+      "bytes": 5345,
+      "sha256": "bf5e22b9dce8464064ae17a48ea1133c3369ac9e1d80ef9e320e5219aa14ea9b"
+    },
+    {
+      "label": "Emscripten 3.1.4 port/toolchain license — emscripten-3.1.4-LICENSE",
+      "file": "site-license-texts/emscripten-ports/emscripten-3.1.4-LICENSE",
+      "source": "https://raw.githubusercontent.com/emscripten-core/emscripten/3.1.4/LICENSE",
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "label": "Emscripten 3.1.4 port/toolchain license — zlib-1.2.11-LICENSE",
+      "file": "site-license-texts/emscripten-ports/zlib-1.2.11-LICENSE",
+      "source": "https://raw.githubusercontent.com/madler/zlib/v1.2.11/README",
+      "bytes": 5187,
+      "sha256": "7960b6b1cc63e619abb77acaea5427159605afee8c8b362664f4effc7d7f7d15"
+    },
+    {
+      "label": "Core Fonts memory decompression runtime",
+      "file": "research/corefonts-runtime/DECODER-THIRD-PARTY-NOTICES.txt",
+      "bytes": 267707,
+      "sha256": "537aadbe0f51d1577dbc153ed81e69a06da43d9fd2c19abb9762f9e34e67e3cd",
+      "source": "Runtime audit notice supplied separately; see its source links."
+    }
+  ],
+  "runtimeNoticeIncluded": true,
+  "notice": {
+    "file": "THIRD_PARTY_NOTICES.txt",
+    "bytes": 761949,
+    "sha256": "b4ae0b6032422ece8fb53ee0e0fa27ac65b8051232c0265d0a71c5b64792b21d"
+  },
+  "deploymentNote": "Full pinned upstream source archives are retained in LICENSES/sources and served alongside the runtime. Application source and build scripts are offered separately; private inputs and research materials are excluded.",
+  "decoderSources": {
+    "selectedRuntime": "libarchive.js@2.0.2",
+    "npmTarball": {
+      "url": "https://registry.npmjs.org/libarchive.js/-/libarchive.js-2.0.2.tgz",
+      "bytes": 1068246,
+      "sha256": "bdcc65af6654b4adbb6cad203272d045d2e25a4cb4281be05b37cc877de92584",
+      "registryIntegrity": "sha512-JHb+P4suNSjvz/dMdRgOe7JAxluXJeialzSFkKHU5y0ZK+m175drPOaIYW6I9WXSDcPcQ13eCUgMnpgY0ggmoQ==",
+      "registryIntegrityVerified": true,
+      "gitHead": "0989c1a6db20d030d793b1763e20d880068091bd"
+    },
+    "runtimeFiles": [
+      {
+        "file": "extract-times.mjs",
+        "bytes": 8086,
+        "sha256": "0eb5b256585f38420d0fe8a69c3d92eb1a49d0b9c4e8d4c1baf4ef2100c08d58"
+      },
+      {
+        "file": "libarchive.mjs",
+        "bytes": 133537,
+        "sha256": "bed41a1003bddc2a018def530c147661944f0889968adcb0d1435e4c88f60d95"
+      },
+      {
+        "file": "libarchive.wasm",
+        "bytes": 1002547,
+        "sha256": "8a66066ed3ea1e6db0469ec752d8fca888a6bf737c6cff21fdbcb62241a72424"
+      }
+    ],
+    "licenses": [
+      {
+        "name": "libarchive.js JavaScript wrapper / Emscripten glue",
+        "version": "2.0.2",
+        "license": "MIT",
+        "licenseFile": "licenses/libarchivejs-MIT.txt",
+        "licenseURL": "https://github.com/nika-begiashvili/libarchivejs/blob/0989c1a6db20d030d793b1763e20d880068091bd/LICENSE",
+        "licenseSHA256": "cd2233ededca3500350239c4995a3bf4f57cb810b77074d266b0fb0d781dc161",
+        "evidence": "Shipped glue is byte-for-byte npm package src/webworker/wasm-gen/libarchive.js; npm registry SHA-512 verified."
+      },
+      {
+        "name": "libarchive native decoder",
+        "version": "3.7.2",
+        "license": "BSD-2-Clause with file-specific terms",
+        "licenseFile": "licenses/libarchive-COPYING.txt",
+        "licenseURL": "https://github.com/libarchive/libarchive/blob/v3.7.2/COPYING",
+        "licenseSHA256": "b2cdf763345de2de34cebf54394df3c61a105c3b71288603c251f2fa638200ba",
+        "evidence": "Runtime get_version() confirms libarchive 3.7.2. CAB/LZX successfully decoded in Node; browser acceptance is separate."
+      },
+      {
+        "name": "libarchive individual source notices",
+        "version": "3.7.2",
+        "license": "BSD-2-Clause; BSD-3-Clause; public domain; optional CC0/OpenSSL/Apache-2.0 file terms",
+        "licenseFile": "licenses/libarchive-source-notices.txt",
+        "licenseURL": "https://github.com/libarchive/libarchive/tree/v3.7.2/libarchive",
+        "licenseSHA256": "46f0238ec1cedc10131b0cc5ffc9420bb704f9ef012537ac94022b17b74653e7",
+        "evidence": "Conservative inclusion of production library C/header file notices; this list does not assert every object survived static-link dead-code elimination. Tests and build tools excluded."
+      },
+      {
+        "name": "libarchive CAB/LZX reader",
+        "version": "3.7.2",
+        "license": "BSD-2-Clause",
+        "licenseFile": "licenses/libarchive-CAB-reader-BSD.txt",
+        "licenseURL": "https://github.com/libarchive/libarchive/blob/v3.7.2/libarchive/archive_read_support_format_cab.c",
+        "licenseSHA256": "aab071466d8c4e8ed4f3474a92f3b63f082354ca558247e7ec9b430f10f2b22b",
+        "evidence": "Required decoder implementation; copyright Michihiro NAKAJIMA 2010-2012."
+      },
+      {
+        "name": "zlib",
+        "version": "1.3 (upstream build recipe)",
+        "license": "Zlib",
+        "licenseFile": "licenses/zlib-1.3.txt",
+        "licenseURL": "https://github.com/madler/zlib/blob/v1.3/LICENSE",
+        "licenseSHA256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+        "evidence": "Upstream pinned Dockerfile declares zlib 1.3; build links USE_ZLIB=1. Binary contains zlib paths; exact embedded sub-version not independently queried."
+      },
+      {
+        "name": "liblzma from XZ Utils",
+        "version": "5.2.11 (upstream build recipe)",
+        "license": "Public domain",
+        "licenseFile": "licenses/xz-5.2.11-COPYING.txt",
+        "licenseURL": "https://github.com/tukaani-project/xz/blob/v5.2.11/COPYING",
+        "licenseSHA256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c",
+        "evidence": "Build explicitly links liblzma.a; XZ CLI GPL/LGPL tools and scripts are not deployed or linked by this wrapper."
+      },
+      {
+        "name": "bzip2 library",
+        "version": "1.0.8 (upstream build recipe)",
+        "license": "bzip2-1.0.6 license",
+        "licenseFile": "licenses/bzip2-1.0.8.txt",
+        "licenseURL": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+        "licenseSHA256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3",
+        "evidence": "Build links USE_BZIP2=1. Binary contains bzip2 code paths; exact embedded sub-version not independently queried."
+      },
+      {
+        "name": "OpenSSL/libcrypto",
+        "version": "1.0.2s (upstream build recipe)",
+        "license": "OpenSSL AND SSLeay",
+        "licenseFile": "licenses/openssl-1.0.2s.txt",
+        "licenseURL": "https://github.com/openssl/openssl/blob/OpenSSL_1_0_2s/LICENSE",
+        "licenseSHA256": "c8f60f4842bbad0353f5d81620e72b168b5638ca3a0a999f5da113b22491612e",
+        "evidence": "Build explicitly links libssl.a and libcrypto.a; binary contains OpenSSL internal-error text. Only relevant static objects are included; fonts use internal CAB LZX, not TLS."
+      },
+      {
+        "name": "Emscripten generated runtime",
+        "version": "Exact toolchain version not embedded or pinned by upstream emscripten/emsdk image",
+        "license": "MIT OR NCSA; bundled Node MIT portions",
+        "licenseFile": "licenses/emscripten-LICENSE.txt",
+        "licenseURL": "https://github.com/emscripten-core/emscripten/blob/3.1.50/LICENSE",
+        "licenseSHA256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+        "evidence": "Generated glue demonstrably Emscripten. Supplied license text source tag 3.1.50 is license evidence, not a claim that that exact compiler built the artifact."
+      },
+      {
+        "name": "musl libc (Emscripten bundled library)",
+        "version": "Exact linked source revision not embedded",
+        "license": "MIT and included source-specific permissive notices",
+        "licenseFile": "licenses/musl-COPYRIGHT.txt",
+        "licenseURL": "https://github.com/emscripten-core/emscripten/blob/3.1.50/system/lib/libc/musl/COPYRIGHT",
+        "licenseSHA256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af",
+        "evidence": "Included conservatively for Emscripten libc portions; upstream does not provide an object-level link map."
+      }
+    ],
+    "upstreamBuildEvidence": [
+      "upstream-Dockerfile",
+      "upstream-build.sh",
+      "upstream-wrapper.c"
+    ],
+    "notDeployed": [
+      "libarchive-wasm@1.2.0 (evaluated alternative, not used)",
+      "fflate (investigated, not used)",
+      "Comlink and bundled worker APIs (not imported)",
+      "XZ command-line programs and GPL build scripts",
+      "Standalone Times New Roman font files"
+    ],
+    "licenseSeparation": "The decoder dependency notices do not license the Microsoft font package; preserve the original times32.exe and its separate original EULA per the user-approved plan."
+  },
+  "releaseSourceManifest": "../LICENSES/source-manifest.json",
+  "applicationSource": {
+    "archive": "formula-studio-source.tar.gz",
+    "integrity": "application-source.json",
+    "license": "Formula-Studio-MIT.txt"
+  },
+  "releaseGate": "See releaseSourceManifest for current build and formula-regression verification status.",
+  "runtimeEngines": {
+    "status": "traceable-build-verified",
+    "version": "v20022022",
+    "outputRegressionPassed": true,
+    "buildReport": "LICENSES/build-materials/swiftlatex/traceable-build-report.json",
+    "regressionReport": "LICENSES/build-materials/swiftlatex/formula-output-regression.json",
+    "recipe": "scripts/rebuild-swiftlatex.py",
+    "note": "Historical upstream prebuilt .a libraries are removed by the recipe and not used in the selected runtime; HarfBuzz3.2.0,Graphite2 1.3.14,andXpdf4.02 are rebuilt from retained implementation source. All35 baseline output hashes match. Byte-identical historical WASM reproduction is not claimed.",
+    "artifacts": [
+      {
+        "path": "runtime/swiftlatexxetex.js",
+        "bytes": 90170,
+        "sha256": "127cdb3dffb2da25c892fa5a3d7006b25a0bb1cf4a16b069ab2428f6fd548d91"
+      },
+      {
+        "path": "runtime/swiftlatexxetex.wasm",
+        "bytes": 3357379,
+        "sha256": "944b7f6dd3efe150b27dc636240d316c77cec98165590a0692c0667b98236e4e"
+      },
+      {
+        "path": "runtime/swiftlatexdvipdfm.js",
+        "bytes": 77085,
+        "sha256": "80d0620536e0a13afaf7ddcf0ccc00c758a6735313a4e962b3a5c8779058ac40"
+      },
+      {
+        "path": "runtime/swiftlatexdvipdfm.wasm",
+        "bytes": 700674,
+        "sha256": "1bf8c0d424c87c1548d9d22d29251aa3308506fa6acc29d4f08dcd77ccc1f9b1"
+      }
+    ]
+  }
+}

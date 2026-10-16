@@ -1,0 +1,42 @@
+{
+  "component": "SwiftLaTeX v20022022",
+  "originalArchive": {
+    "file": "swiftlatex-v20022022-source.tar.gz",
+    "url": "https://codeload.github.com/SwiftLaTeX/SwiftLaTeX/tar.gz/refs/tags/v20022022",
+    "bytes": 11561472,
+    "sha256": "1ce48c972ef7c4801f6c30b039da12e8b08cef02993a40374d7f1089f6643060"
+  },
+  "sourceOnlyArchive": {
+    "file": "swiftlatex-v20022022-source-only.tar.gz",
+    "path": "LICENSES/sources/swiftlatex-v20022022-source-only.tar.gz",
+    "bytes": 3107332,
+    "sha256": "4deddb8433715b1a9d174229c7c9e3edc6fb1a007f56fdf2991dd2b52bda15bc"
+  },
+  "recipe": "drop-prebuilt-object-files-v1",
+  "removedMembers": [
+    {
+      "name": "SwiftLaTeX-20022022/pdftex.wasm/xpdf/xpdf.a",
+      "bytes": 1553394,
+      "sha256": "6a8a84230f042cf09ea83161237ccbba5aaa4140787c3597944cc79eb409507e"
+    },
+    {
+      "name": "SwiftLaTeX-20022022/xetex.wasm/graphite2/libgraphite2.a",
+      "bytes": 159564,
+      "sha256": "fce74d18ea51141d3c23b4f77037d7c830360f43ab673302795f286f3b81cc08"
+    },
+    {
+      "name": "SwiftLaTeX-20022022/xetex.wasm/harfbuzz/libharfbuzz.a",
+      "bytes": 27689156,
+      "sha256": "d39b9b2ab03e34acffcfe47db2e1e4971fb5387575a365c874c1bb305277223b"
+    },
+    {
+      "name": "SwiftLaTeX-20022022/xetex.wasm/xpdf/xpdf.a",
+      "bytes": 574576,
+      "sha256": "c5bf7d4b4bb31d807ea8fe4e15d8c966f0a15c5e153572aecd9792d72f8f5f26"
+    }
+  ],
+  "retainedFileCount": 685,
+  "preferredSourceTreeSHA256": "0b98c059379feca23a9d312cbdbbdb4f66436d25abb37c7c3704a2089ca7a8ef",
+  "treeHashAlgorithm": "SHA256 of sorted UTF-8 records archive-member-name + NUL + SHA256(file bytes) + LF, for every retained regular file.",
+  "note": "All removed files are unused historical static object libraries. All implementation sources, headers, licenses, data and Makefiles remain unchanged. The actual build3 script removed these same four .a files before compiling; source-preparation input trees are therefore identical."
+}

@@ -1,0 +1,340 @@
+configure: cmake -S <build>/source/graphite2-1.3.14.tgz/graphite2-1.3.14 -B <build>/graphite-build -DBUILD_SHARED_LIBS=OFF -DCMAKE_BUILD_TYPE=Release -DGRAPHITE2_VM_TYPE=call -DGRAPHITE2_NTRACING=ON -DGRAPHITE2_NFILEFACE=OFF -DCMAKE_TOOLCHAIN_FILE=/private/tmp/formula-studio-sdk314/install/emscripten/cmake/Modules/Platform/Emscripten.cmake -DCMAKE_CROSSCOMPILING_EMULATOR=/usr/local/bin/node;--experimental-wasm-threads
+CMake Deprecation Warning at CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Found PythonInterp: /tmp/formula-studio-build-tools/bin/python3 (found suitable version "3.9.6", minimum required is "3.6") 
+-- Build: Release
+-- Building library: static
+-- File Face support: enabled
+-- Tracing support: disabled
+-- Using vm machine type: call
+CMake Deprecation Warning at src/CMakeLists.txt:22 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at tests/bittwiddling/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of size_t
+-- Check size of size_t - done
+CMake Deprecation Warning at tests/json/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at tests/sparsetest/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at tests/utftest/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at gr2fonttest/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Configuring done (2.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: <build>/graphite-build
+[  6%] Building CXX object src/CMakeFiles/graphite2.dir/gr_char_info.cpp.o
+[  6%] Building CXX object src/CMakeFiles/graphite2.dir/call_machine.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/graphite2.dir/gr_features.cpp.o
+[ 13%] Building CXX object src/CMakeFiles/graphite2.dir/gr_face.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/graphite2.dir/gr_font.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/graphite2.dir/gr_logging.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/graphite2.dir/gr_segment.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/graphite2.dir/gr_slot.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/graphite2.dir/CmapCache.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/graphite2.dir/Code.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/graphite2.dir/Collider.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/graphite2.dir/Decompressor.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/graphite2.dir/Face.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/graphite2.dir/FeatureMap.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/graphite2.dir/Font.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/graphite2.dir/GlyphFace.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/graphite2.dir/GlyphCache.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/graphite2.dir/Intervals.cpp.o
+[ 63%] Building CXX object src/CMakeFiles/graphite2.dir/Justifier.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/graphite2.dir/NameTable.cpp.o
+[ 70%] Building CXX object src/CMakeFiles/graphite2.dir/Pass.cpp.o
+[ 73%] Building CXX object src/CMakeFiles/graphite2.dir/Position.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/graphite2.dir/Segment.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/graphite2.dir/Silf.cpp.o
+[ 83%] Building CXX object src/CMakeFiles/graphite2.dir/Slot.cpp.o
+[ 86%] Building CXX object src/CMakeFiles/graphite2.dir/Sparse.cpp.o
+[ 90%] Building CXX object src/CMakeFiles/graphite2.dir/TtfUtil.cpp.o
+[ 93%] Building CXX object src/CMakeFiles/graphite2.dir/UtfCodec.cpp.o
+[ 96%] Building CXX object src/CMakeFiles/graphite2.dir/FileFace.cpp.o
+[100%] Linking CXX static library libgraphite2.a
+[100%] Built target graphite2
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ goo/FixedPoint.cc -o goo/FixedPoint.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ goo/GHash.cc -o goo/GHash.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ goo/gmem.cc -o goo/gmem.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ goo/GString.cc -o goo/GString.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ goo/gfile.cc -o goo/gfile.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ goo/GList.cc -o goo/GList.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ goo/gmempp.cc -o goo/gmempp.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ fofi/FoFiBase.cc -o fofi/FoFiBase.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ fofi/FoFiIdentifier.cc -o fofi/FoFiIdentifier.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ fofi/FoFiType1.cc -o fofi/FoFiType1.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ fofi/FoFiEncodings.cc -o fofi/FoFiEncodings.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ fofi/FoFiTrueType.cc -o fofi/FoFiTrueType.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ fofi/FoFiType1C.cc -o fofi/FoFiType1C.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Array.cc -o xpdf/Array.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Annot.cc -o xpdf/Annot.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Lexer.cc -o xpdf/Lexer.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Catalog.cc -o xpdf/Catalog.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Stream.cc -o xpdf/Stream.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Object.cc -o xpdf/Object.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/TextString.cc -o xpdf/TextString.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Dict.cc -o xpdf/Dict.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Error.cc -o xpdf/Error.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Page.cc -o xpdf/Page.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Parser.cc -o xpdf/Parser.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/PDFDoc.cc -o xpdf/PDFDoc.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/UTF8.cc -o xpdf/UTF8.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/XRef.cc -o xpdf/XRef.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/GfxFont.cc -o xpdf/GfxFont.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Link.cc -o xpdf/Link.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/GlobalParams.cc -o xpdf/GlobalParams.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/CharCodeToUnicode.cc -o xpdf/CharCodeToUnicode.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/PSTokenizer.cc -o xpdf/PSTokenizer.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/NameToCharCode.cc -o xpdf/NameToCharCode.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/UnicodeMap.cc -o xpdf/UnicodeMap.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/UnicodeRemapping.cc -o xpdf/UnicodeRemapping.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/FontEncodingTables.cc -o xpdf/FontEncodingTables.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/PDFDocEncoding.cc -o xpdf/PDFDocEncoding.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/BuiltinFontTables.cc -o xpdf/BuiltinFontTables.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/BuiltinFont.cc -o xpdf/BuiltinFont.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/CMap.cc -o xpdf/CMap.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/OptionalContent.cc -o xpdf/OptionalContent.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/JBIG2Stream.cc -o xpdf/JBIG2Stream.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/JPXStream.cc -o xpdf/JPXStream.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/JArithmeticDecoder.cc -o xpdf/JArithmeticDecoder.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Decrypt.cc -o xpdf/Decrypt.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/SecurityHandler.cc -o xpdf/SecurityHandler.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Form.cc -o xpdf/Form.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/XFAForm.cc -o xpdf/XFAForm.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/AcroForm.cc -o xpdf/AcroForm.o
+em++ -c -O3 -flto=thin  -I. -Ifofi/ -Igoo/ -Ixpdf/ -Isplash/ xpdf/Zoox.cc -o xpdf/Zoox.o
+emar rcs xpdf.a goo/FixedPoint.o goo/GHash.o goo/gmem.o goo/GString.o goo/gfile.o goo/GList.o goo/gmempp.o fofi/FoFiBase.o fofi/FoFiIdentifier.o fofi/FoFiType1.o fofi/FoFiEncodings.o fofi/FoFiTrueType.o fofi/FoFiType1C.o xpdf/Array.o xpdf/Annot.o xpdf/Lexer.o xpdf/Catalog.o xpdf/Stream.o xpdf/Object.o xpdf/TextString.o xpdf/Dict.o xpdf/Error.o xpdf/Page.o xpdf/Parser.o xpdf/PDFDoc.o xpdf/UTF8.o xpdf/XRef.o xpdf/GfxFont.o xpdf/Link.o xpdf/GlobalParams.o xpdf/CharCodeToUnicode.o xpdf/PSTokenizer.o xpdf/NameToCharCode.o xpdf/UnicodeMap.o xpdf/UnicodeRemapping.o xpdf/FontEncodingTables.o xpdf/PDFDocEncoding.o xpdf/BuiltinFontTables.o xpdf/BuiltinFont.o xpdf/CMap.o xpdf/OptionalContent.o xpdf/JBIG2Stream.o xpdf/JPXStream.o xpdf/JArithmeticDecoder.o xpdf/Decrypt.o xpdf/SecurityHandler.o xpdf/Form.o xpdf/XFAForm.o xpdf/AcroForm.o xpdf/Zoox.o 
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ tex/xetex0.c -o tex/xetex0.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ tex/xetexini.c -o tex/xetexini.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ tex/xetex-pool.c -o tex/xetex-pool.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ md5.c -o md5.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ xmemory.c -o xmemory.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ texfile.c -o texfile.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ kpseemu.c -o kpseemu.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ texmfmp.c -o texmfmp.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ main.c -o main.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ bibtex.c -o bibtex.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ xetexdir/XeTeX_ext.c -o xetexdir/XeTeX_ext.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ xetexdir/XeTeX_pic.c -o xetexdir/XeTeX_pic.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ xetexdir/image/bmpimage.c -o xetexdir/image/bmpimage.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ xetexdir/image/jpegimage.c -o xetexdir/image/jpegimage.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ xetexdir/image/pngimage.c -o xetexdir/image/pngimage.o
+emcc -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I harfbuzz/ xetexdir/trans.c -o xetexdir/trans.o
+em++ -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I xetexdir/ -I harfbuzz/  -I xpdf/ -I xpdf/goo/ -I xpdf/xpdf/ xetexdir/XeTeXOTMath.cpp -o xetexdir/XeTeXOTMath.o
+em++ -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I xetexdir/ -I harfbuzz/  -I xpdf/ -I xpdf/goo/ -I xpdf/xpdf/ xetexdir/XeTeXLayoutInterface.cpp -o xetexdir/XeTeXLayoutInterface.o
+em++ -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I xetexdir/ -I harfbuzz/  -I xpdf/ -I xpdf/goo/ -I xpdf/xpdf/ xetexdir/XeTeXFontMgr.cpp -o xetexdir/XeTeXFontMgr.o
+xetexdir/XeTeXLayoutInterface.cpp:342:17: warning: 'hb_ot_layout_script_find_language' is deprecated [-Wdeprecated-declarations]
+            if (hb_ot_layout_script_find_language(face, tableTag, scriptIndex, language, &langIndex) || language == 0) {
+                ^
+harfbuzz/hb-ot-deprecated.h:62:11: note: 'hb_ot_layout_script_find_language' has been explicitly marked deprecated here
+HB_EXTERN HB_DEPRECATED_FOR (hb_ot_layout_script_select_language) hb_bool_t
+          ^
+harfbuzz/hb-common.h:85:30: note: expanded from macro 'HB_DEPRECATED_FOR'
+#define HB_DEPRECATED_FOR(f) HB_DEPRECATED
+                             ^
+harfbuzz/hb-common.h:73:38: note: expanded from macro 'HB_DEPRECATED'
+#define HB_DEPRECATED __attribute__((__deprecated__))
+                                     ^
+xetexdir/XeTeXLayoutInterface.cpp:362:17: warning: 'hb_ot_layout_script_find_language' is deprecated [-Wdeprecated-declarations]
+            if (hb_ot_layout_script_find_language(face, tableTag, scriptIndex, language, &langIndex) || language == 0) {
+                ^
+harfbuzz/hb-ot-deprecated.h:62:11: note: 'hb_ot_layout_script_find_language' has been explicitly marked deprecated here
+HB_EXTERN HB_DEPRECATED_FOR (hb_ot_layout_script_select_language) hb_bool_t
+          ^
+harfbuzz/hb-common.h:85:30: note: expanded from macro 'HB_DEPRECATED_FOR'
+#define HB_DEPRECATED_FOR(f) HB_DEPRECATED
+                             ^
+harfbuzz/hb-common.h:73:38: note: expanded from macro 'HB_DEPRECATED'
+#define HB_DEPRECATED __attribute__((__deprecated__))
+                                     ^
+xetexdir/XeTeXLayoutInterface.cpp:947:23: warning: 'hb_graphite2_font_get_gr_font' is deprecated [-Wdeprecated-declarations]
+    gr_font* grFont = hb_graphite2_font_get_gr_font(engine->font->getHbFont());
+                      ^
+harfbuzz/hb-graphite2.h:52:11: note: 'hb_graphite2_font_get_gr_font' has been explicitly marked deprecated here
+HB_EXTERN HB_DEPRECATED_FOR (hb_graphite2_face_get_gr_face) gr_font *
+          ^
+harfbuzz/hb-common.h:85:30: note: expanded from macro 'HB_DEPRECATED_FOR'
+#define HB_DEPRECATED_FOR(f) HB_DEPRECATED
+                             ^
+harfbuzz/hb-common.h:73:38: note: expanded from macro 'HB_DEPRECATED'
+#define HB_DEPRECATED __attribute__((__deprecated__))
+                                     ^
+3 warnings generated.
+em++ -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I xetexdir/ -I harfbuzz/  -I xpdf/ -I xpdf/goo/ -I xpdf/xpdf/ xetexdir/XeTeXFontInst.cpp -o xetexdir/XeTeXFontInst.o
+em++ -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I xetexdir/ -I harfbuzz/  -I xpdf/ -I xpdf/goo/ -I xpdf/xpdf/ xetexdir/XeTeXFontMgr_FC.cpp -o xetexdir/XeTeXFontMgr_FC.o
+xetexdir/XeTeXFontInst.cpp:249:5: warning: 'hb_font_funcs_set_glyph_func' is deprecated [-Wdeprecated-declarations]
+    hb_font_funcs_set_glyph_func                (funcs, _get_glyph, NULL, NULL);
+    ^
+harfbuzz/hb-deprecated.h:105:11: note: 'hb_font_funcs_set_glyph_func' has been explicitly marked deprecated here
+HB_EXTERN HB_DEPRECATED_FOR(hb_font_funcs_set_nominal_glyph_func and hb_font_funcs_set_variation_glyph_func) void
+          ^
+harfbuzz/hb-common.h:85:30: note: expanded from macro 'HB_DEPRECATED_FOR'
+#define HB_DEPRECATED_FOR(f) HB_DEPRECATED
+                             ^
+harfbuzz/hb-common.h:73:38: note: expanded from macro 'HB_DEPRECATED'
+#define HB_DEPRECATED __attribute__((__deprecated__))
+                                     ^
+1 warning generated.
+em++ -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I xetexdir/ -I harfbuzz/  -I xpdf/ -I xpdf/goo/ -I xpdf/xpdf/ xetexdir/hz.cpp -o xetexdir/hz.o
+em++ -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I tex/ -I xetexdir/ -I harfbuzz/  -I xpdf/ -I xpdf/goo/ -I xpdf/xpdf/ xetexdir/pdfimage.cpp -o xetexdir/pdfimage.o
+em++ -c -O3 -Wno-parentheses-equality -Wno-pointer-sign -DWEBASSEMBLY_BUILD -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. -I teckit/ teckit/teckit-Engine.cpp -o teckit/teckit-Engine.o
+em++ -o swiftlatexxetex.js -O3 --js-library library.js -s USE_FREETYPE=1 -s USE_ICU=1 -s USE_LIBPNG=1 --pre-js pre.js -s EXPORTED_FUNCTIONS='["_compileBibtex", "_compileLaTeX", "_compileFormat", "_main", "_setMainEntry"]' -s NO_EXIT_RUNTIME=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1   tex/xetex0.o tex/xetexini.o tex/xetex-pool.o md5.o xmemory.o texfile.o kpseemu.o texmfmp.o main.o bibtex.o xetexdir/XeTeX_ext.o xetexdir/XeTeX_pic.o xetexdir/image/bmpimage.o xetexdir/image/jpegimage.o xetexdir/image/pngimage.o xetexdir/trans.o xetexdir/XeTeXOTMath.o xetexdir/XeTeXLayoutInterface.o xetexdir/XeTeXFontMgr.o xetexdir/XeTeXFontInst.o xetexdir/XeTeXFontMgr_FC.o xetexdir/hz.o xetexdir/pdfimage.o teckit/teckit-Engine.o xpdf/xpdf.a graphite2/libgraphite2.a harfbuzz/libharfbuzz.a
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. core-memory.c -o core-memory.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. core-bridge.c -o core-bridge.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. md5.c -o md5.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dvipdfmx-wasm.c -o dvipdfmx-wasm.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-agl.c -o dpx-agl.o
+dvipdfmx-wasm.c:36:24: warning: passing 'char *' to parameter of type 'md5_byte_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+    md5_finish(&state, digest);
+                       ^~~~~~
+./md5.h:35:46: note: passing argument to parameter 'digest' here
+void md5_finish(md5_state_t *pms, md5_byte_t digest[16]);
+                                             ^
+dvipdfmx-wasm.c:45:24: warning: passing 'const char *' to parameter of type 'const md5_byte_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+    md5_append(&state, data, len);
+                       ^~~~
+./md5.h:32:53: note: passing argument to parameter 'data' here
+void md5_append(md5_state_t *pms, const md5_byte_t *data, int nbytes);
+                                                    ^
+dvipdfmx-wasm.c:46:24: warning: passing 'char *' to parameter of type 'md5_byte_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+    md5_finish(&state, digest);
+                       ^~~~~~
+./md5.h:35:46: note: passing argument to parameter 'digest' here
+void md5_finish(md5_state_t *pms, md5_byte_t digest[16]);
+                                             ^
+dvipdfmx-wasm.c:393:44: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    char *normalized_path = kpse_find_file(path, format);
+                                           ^~~~
+dvipdfmx-wasm.c:351:28: note: passing argument to parameter 'name' here
+char *kpse_find_file(char *name, tt_input_format_type tt_format) {
+                           ^
+4 warnings generated.
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-dvi.c -o dpx-dvi.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfdoc.c -o dpx-pdfdoc.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-spc_color.c -o dpx-spc_color.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-tt_aux.c -o dpx-tt_aux.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-bmpimage.c -o dpx-bmpimage.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-dvipdfmx.c -o dpx-dvipdfmx.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfdraw.c -o dpx-pdfdraw.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-spc_dvipdfmx.c -o dpx-spc_dvipdfmx.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-tt_cmap.c -o dpx-tt_cmap.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-cff.c -o dpx-cff.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-epdf.c -o dpx-epdf.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfencoding.c -o dpx-pdfencoding.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-spc_dvips.c -o dpx-spc_dvips.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-tt_glyf.c -o dpx-tt_glyf.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-cff_dict.c -o dpx-cff_dict.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-error.c -o dpx-error.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfencrypt.c -o dpx-pdfencrypt.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-spc_html.c -o dpx-spc_html.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-tt_gsub.c -o dpx-tt_gsub.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-cid.c -o dpx-cid.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-fontmap.c -o dpx-fontmap.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdffont.c -o dpx-pdffont.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-spc_misc.c -o dpx-spc_misc.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-tt_post.c -o dpx-tt_post.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-cidtype0.c -o dpx-cidtype0.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-jp2image.c -o dpx-jp2image.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfnames.c -o dpx-pdfnames.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-spc_pdfm.c -o dpx-spc_pdfm.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-tt_table.c -o dpx-tt_table.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-cidtype2.c -o dpx-cidtype2.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-jpegimage.c -o dpx-jpegimage.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfobj.c -o dpx-pdfobj.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-spc_tpic.c -o dpx-spc_tpic.o
+dpx-pdfobj.c:2034:16: warning: assigning to 'Bytef *' (aka 'unsigned char *') from 'const void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    z.next_in  = data; z.avail_in  = len;
+               ^ ~~~~
+dpx-pdfobj.c:2307:16: warning: assigning to 'Bytef *' (aka 'unsigned char *') from 'const void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    z.next_in  = data; z.avail_in  = len;
+               ^ ~~~~
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-type0.c -o dpx-type0.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-cmap.c -o dpx-cmap.o
+2 warnings generated.
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-mem.c -o dpx-mem.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfparse.c -o dpx-pdfparse.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-spc_util.c -o dpx-spc_util.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-type1.c -o dpx-type1.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-cmap_read.c -o dpx-cmap_read.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-mfileio.c -o dpx-mfileio.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfresource.c -o dpx-pdfresource.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-spc_xtx.c -o dpx-spc_xtx.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-type1c.c -o dpx-type1c.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-cmap_write.c -o dpx-cmap_write.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-mpost.c -o dpx-mpost.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfximage.c -o dpx-pdfximage.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-specials.c -o dpx-specials.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-unicode.c -o dpx-unicode.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-cs_type2.c -o dpx-cs_type2.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-numbers.c -o dpx-numbers.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pkfont.c -o dpx-pkfont.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-subfont.c -o dpx-subfont.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-vf.c -o dpx-vf.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-dpxconf.c -o dpx-dpxconf.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-otl_conf.c -o dpx-otl_conf.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pngimage.c -o dpx-pngimage.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-t1_char.c -o dpx-t1_char.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-dpxcrypt.c -o dpx-dpxcrypt.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-otl_opt.c -o dpx-otl_opt.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pst.c -o dpx-pst.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-t1_load.c -o dpx-t1_load.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-dpxfile.c -o dpx-dpxfile.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfcolor.c -o dpx-pdfcolor.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pst_obj.c -o dpx-pst_obj.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-tfm.c -o dpx-tfm.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-dpxutil.c -o dpx-dpxutil.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-pdfdev.c -o dpx-pdfdev.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-sfnt.c -o dpx-sfnt.o
+emcc -c -O3 -DHAVE_ZLIB -s USE_LIBPNG=1 -fno-rtti -fno-exceptions -I. dpx-truetype.c -o dpx-truetype.o
+em++ -o swiftlatexdvipdfm.js -O3  --js-library library.js -s USE_LIBPNG=1 --pre-js pre.js -s EXPORTED_FUNCTIONS='["_compilePDF", "_setMainEntry", "_main"]' -s NO_EXIT_RUNTIME=1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -fno-rtti -fno-exceptions  core-memory.o core-bridge.o md5.o dvipdfmx-wasm.o dpx-agl.o dpx-dvi.o dpx-pdfdoc.o dpx-spc_color.o dpx-tt_aux.o dpx-bmpimage.o dpx-dvipdfmx.o dpx-pdfdraw.o dpx-spc_dvipdfmx.o dpx-tt_cmap.o dpx-cff.o dpx-epdf.o dpx-pdfencoding.o dpx-spc_dvips.o dpx-tt_glyf.o dpx-cff_dict.o dpx-error.o dpx-pdfencrypt.o dpx-spc_html.o dpx-tt_gsub.o dpx-cid.o dpx-fontmap.o dpx-pdffont.o dpx-spc_misc.o dpx-tt_post.o dpx-cidtype0.o dpx-jp2image.o dpx-pdfnames.o dpx-spc_pdfm.o dpx-tt_table.o dpx-cidtype2.o dpx-jpegimage.o dpx-pdfobj.o dpx-spc_tpic.o dpx-type0.o dpx-cmap.o dpx-mem.o dpx-pdfparse.o dpx-spc_util.o dpx-type1.o dpx-cmap_read.o dpx-mfileio.o dpx-pdfresource.o dpx-spc_xtx.o dpx-type1c.o dpx-cmap_write.o dpx-mpost.o dpx-pdfximage.o dpx-specials.o dpx-unicode.o dpx-cs_type2.o dpx-numbers.o dpx-pkfont.o dpx-subfont.o dpx-vf.o dpx-dpxconf.o dpx-otl_conf.o dpx-pngimage.o dpx-t1_char.o dpx-dpxcrypt.o dpx-otl_opt.o dpx-pst.o dpx-t1_load.o dpx-dpxfile.o dpx-pdfcolor.o dpx-pst_obj.o dpx-tfm.o dpx-dpxutil.o dpx-pdfdev.o dpx-sfnt.o dpx-truetype.o 
+Candidate build complete: <build>/artifacts
