@@ -227,6 +227,10 @@ export const messages = {
     "en-US": "Typesetting and export details",
     "zh-CN": "本次排版信息与导出说明"
   },
+  "footer.authorLabel": {
+    "en-US": "Pierson Bian’s personal website (opens in a new tab)",
+    "zh-CN": "Pierson Bian 的个人主页（在新标签页打开）"
+  },
   "footer.originalCode": {
     "en-US": "Original code:",
     "zh-CN": "原创代码采用"
